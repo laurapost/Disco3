@@ -93,13 +93,19 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Discussion" id="bLi-1E-W9X">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="HdI-Dw-dCr"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="vep-ia-qDx"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="vep-ia-qDx">
+                            <connections>
+                                <segue destination="0Ah-PZ-fLo" kind="unwind" unwindAction="unwindToDiscussionListWithSender:" id="Gry-qV-oDz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="O8y-67-0QA" id="hmP-3u-fsI"/>
+                        <outlet property="saveButton" destination="vep-ia-qDx" id="JeX-io-sTD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="0Ah-PZ-fLo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1927.2" y="36.431784107946029"/>
         </scene>

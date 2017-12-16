@@ -103,4 +103,13 @@ class DiscussionTableViewController: UITableViewController {
         
         discussions += [discussion1, discussion2, discussion3]
     }
+    
+    //MARK: Actions
+    @IBAction func unwindToDiscussionList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? ViewController, let discussion = sourceViewController.discussion {
+            let newIndexPath = IndexPath(row: discussions.count, section: 0)
+            discussions.append(discussion)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
 }
