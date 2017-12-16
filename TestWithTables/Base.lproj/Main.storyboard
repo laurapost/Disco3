@@ -76,7 +76,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="twitter" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -92,7 +92,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Discussion" id="bLi-1E-W9X">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="HdI-Dw-dCr"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="HdI-Dw-dCr">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="j4f-XT-CZN"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="vep-ia-qDx">
                             <connections>
                                 <segue destination="0Ah-PZ-fLo" kind="unwind" unwindAction="unwindToDiscussionListWithSender:" id="Gry-qV-oDz"/>

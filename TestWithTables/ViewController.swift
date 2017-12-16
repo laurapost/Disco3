@@ -26,10 +26,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     func textFieldDidEndEditing(_ textField: UITextField) {
-
+        updateSaveButtonState()
+        navigationItem.title = textField.text
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        //Disable the Save button while editing
+        saveButton.isEnabled = false
     }
     
     //MARK: Navigation
+    
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     //method that lets you configure a view controller before it's presented
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
@@ -47,7 +58,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         //Handle the text field's user input
-        //nameTextField.delegate = self
+        nameTextField.delegate = self
+        //Enable the Save button only if the text field has a valid discussion name
+        updateSaveButtonState()
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +68,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-
+    //MARK: Private Methods
+    private func updateSaveButtonState() {
+        //Disable the Save button is the text field is empty
+        let text = nameTextField.text ?? ""
+        saveButton.isEnabled = !text.isEmpty
+    }
+    
 }
 
