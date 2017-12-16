@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CD66FB3B1FE46DD40090D6A3"
+               BuildableName = "TestWithTables.app"
+               BlueprintName = "TestWithTables"
+               ReferencedContainer = "container:TestWithTables.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CD66FB4F1FE46DD40090D6A3"
+               BuildableName = "TestWithTablesTests.xctest"
+               BlueprintName = "TestWithTablesTests"
+               ReferencedContainer = "container:TestWithTables.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CD66FB5A1FE46DD40090D6A3"
+               BuildableName = "TestWithTablesUITests.xctest"
+               BlueprintName = "TestWithTablesUITests"
+               ReferencedContainer = "container:TestWithTables.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CD66FB3B1FE46DD40090D6A3"
+            BuildableName = "TestWithTables.app"
+            BlueprintName = "TestWithTables"
+            ReferencedContainer = "container:TestWithTables.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CD66FB3B1FE46DD40090D6A3"
+            BuildableName = "TestWithTables.app"
+            BlueprintName = "TestWithTables"
+            ReferencedContainer = "container:TestWithTables.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CD66FB3B1FE46DD40090D6A3"
+            BuildableName = "TestWithTables.app"
+            BlueprintName = "TestWithTables"
+            ReferencedContainer = "container:TestWithTables.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

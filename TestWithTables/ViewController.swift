@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CreateViewController.swift
 //  TestWithTables
 //
 //  Created by Laura Post on 12/15/17.
@@ -8,11 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
+    
+    //MARK: Properties
+    @IBOutlet weak var nameTextField: UITextField!
+    
 
+    
+    //MARK: UITextFieldDelegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //Hide the keyboard
+        textField.resignFirstResponder()
+        return true
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+    }
+    
+    //MARK: Actions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //Handle the text field's user input
+        nameTextField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
