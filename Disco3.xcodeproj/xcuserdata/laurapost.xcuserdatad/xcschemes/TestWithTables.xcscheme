@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CD66FB3B1FE46DD40090D6A3"
-               BuildableName = "TestWithTables.app"
-               BlueprintName = "TestWithTables"
-               ReferencedContainer = "container:TestWithTables.xcodeproj">
+               BuildableName = "Disco3.app"
+               BlueprintName = "Disco3"
+               ReferencedContainer = "container:Disco3.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CD66FB4F1FE46DD40090D6A3"
-               BuildableName = "TestWithTablesTests.xctest"
-               BlueprintName = "TestWithTablesTests"
-               ReferencedContainer = "container:TestWithTables.xcodeproj">
+               BuildableName = "Disco3Tests.xctest"
+               BlueprintName = "Disco3Tests"
+               ReferencedContainer = "container:Disco3.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CD66FB5A1FE46DD40090D6A3"
-               BuildableName = "TestWithTablesUITests.xctest"
-               BlueprintName = "TestWithTablesUITests"
-               ReferencedContainer = "container:TestWithTables.xcodeproj">
+               BuildableName = "Disco3UITests.xctest"
+               BlueprintName = "Disco3UITests"
+               ReferencedContainer = "container:Disco3.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CD66FB3B1FE46DD40090D6A3"
-            BuildableName = "TestWithTables.app"
-            BlueprintName = "TestWithTables"
-            ReferencedContainer = "container:TestWithTables.xcodeproj">
+            BuildableName = "Disco3.app"
+            BlueprintName = "Disco3"
+            ReferencedContainer = "container:Disco3.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CD66FB3B1FE46DD40090D6A3"
-            BuildableName = "TestWithTables.app"
-            BlueprintName = "TestWithTables"
-            ReferencedContainer = "container:TestWithTables.xcodeproj">
+            BuildableName = "Disco3.app"
+            BlueprintName = "Disco3"
+            ReferencedContainer = "container:Disco3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CD66FB3B1FE46DD40090D6A3"
-            BuildableName = "TestWithTables.app"
-            BlueprintName = "TestWithTables"
-            ReferencedContainer = "container:TestWithTables.xcodeproj">
+            BuildableName = "Disco3.app"
+            BlueprintName = "Disco3"
+            ReferencedContainer = "container:Disco3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

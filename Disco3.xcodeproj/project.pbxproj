@@ -37,17 +37,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CD66FB3C1FE46DD40090D6A3 /* TestWithTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestWithTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD66FB3C1FE46DD40090D6A3 /* Disco3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Disco3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD66FB3F1FE46DD40090D6A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD66FB411FE46DD40090D6A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD66FB441FE46DD40090D6A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD66FB461FE46DD40090D6A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD66FB491FE46DD40090D6A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD66FB4B1FE46DD40090D6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD66FB501FE46DD40090D6A3 /* TestWithTablesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestWithTablesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD66FB501FE46DD40090D6A3 /* Disco3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Disco3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD66FB541FE46DD40090D6A3 /* TestWithTablesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWithTablesTests.swift; sourceTree = "<group>"; };
 		CD66FB561FE46DD40090D6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD66FB5B1FE46DD40090D6A3 /* TestWithTablesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestWithTablesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD66FB5B1FE46DD40090D6A3 /* Disco3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Disco3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD66FB5F1FE46DD40090D6A3 /* TestWithTablesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWithTablesUITests.swift; sourceTree = "<group>"; };
 		CD66FB611FE46DD40090D6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD66FB6F1FE49FDD0090D6A3 /* Discussion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discussion.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		CD66FB331FE46DD40090D6A3 = {
 			isa = PBXGroup;
 			children = (
-				CD66FB3E1FE46DD40090D6A3 /* TestWithTables */,
+				CD66FB3E1FE46DD40090D6A3 /* Disco3 */,
 				CD66FB531FE46DD40090D6A3 /* TestWithTablesTests */,
 				CD66FB5E1FE46DD40090D6A3 /* TestWithTablesUITests */,
 				CD66FB3D1FE46DD40090D6A3 /* Products */,
@@ -93,14 +93,14 @@
 		CD66FB3D1FE46DD40090D6A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD66FB3C1FE46DD40090D6A3 /* TestWithTables.app */,
-				CD66FB501FE46DD40090D6A3 /* TestWithTablesTests.xctest */,
-				CD66FB5B1FE46DD40090D6A3 /* TestWithTablesUITests.xctest */,
+				CD66FB3C1FE46DD40090D6A3 /* Disco3.app */,
+				CD66FB501FE46DD40090D6A3 /* Disco3Tests.xctest */,
+				CD66FB5B1FE46DD40090D6A3 /* Disco3UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CD66FB3E1FE46DD40090D6A3 /* TestWithTables */ = {
+		CD66FB3E1FE46DD40090D6A3 /* Disco3 */ = {
 			isa = PBXGroup;
 			children = (
 				CD66FB3F1FE46DD40090D6A3 /* AppDelegate.swift */,
@@ -113,6 +113,7 @@
 				CD66FB481FE46DD40090D6A3 /* LaunchScreen.storyboard */,
 				CD66FB4B1FE46DD40090D6A3 /* Info.plist */,
 			);
+			name = Disco3;
 			path = TestWithTables;
 			sourceTree = "<group>";
 		};
@@ -137,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CD66FB3B1FE46DD40090D6A3 /* TestWithTables */ = {
+		CD66FB3B1FE46DD40090D6A3 /* Disco3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD66FB641FE46DD40090D6A3 /* Build configuration list for PBXNativeTarget "TestWithTables" */;
+			buildConfigurationList = CD66FB641FE46DD40090D6A3 /* Build configuration list for PBXNativeTarget "Disco3" */;
 			buildPhases = (
 				CD66FB381FE46DD40090D6A3 /* Sources */,
 				CD66FB391FE46DD40090D6A3 /* Frameworks */,
@@ -149,14 +150,14 @@
 			);
 			dependencies = (
 			);
-			name = TestWithTables;
+			name = Disco3;
 			productName = TestWithTables;
-			productReference = CD66FB3C1FE46DD40090D6A3 /* TestWithTables.app */;
+			productReference = CD66FB3C1FE46DD40090D6A3 /* Disco3.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CD66FB4F1FE46DD40090D6A3 /* TestWithTablesTests */ = {
+		CD66FB4F1FE46DD40090D6A3 /* Disco3Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD66FB671FE46DD40090D6A3 /* Build configuration list for PBXNativeTarget "TestWithTablesTests" */;
+			buildConfigurationList = CD66FB671FE46DD40090D6A3 /* Build configuration list for PBXNativeTarget "Disco3Tests" */;
 			buildPhases = (
 				CD66FB4C1FE46DD40090D6A3 /* Sources */,
 				CD66FB4D1FE46DD40090D6A3 /* Frameworks */,
@@ -167,14 +168,14 @@
 			dependencies = (
 				CD66FB521FE46DD40090D6A3 /* PBXTargetDependency */,
 			);
-			name = TestWithTablesTests;
+			name = Disco3Tests;
 			productName = TestWithTablesTests;
-			productReference = CD66FB501FE46DD40090D6A3 /* TestWithTablesTests.xctest */;
+			productReference = CD66FB501FE46DD40090D6A3 /* Disco3Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CD66FB5A1FE46DD40090D6A3 /* TestWithTablesUITests */ = {
+		CD66FB5A1FE46DD40090D6A3 /* Disco3UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD66FB6A1FE46DD40090D6A3 /* Build configuration list for PBXNativeTarget "TestWithTablesUITests" */;
+			buildConfigurationList = CD66FB6A1FE46DD40090D6A3 /* Build configuration list for PBXNativeTarget "Disco3UITests" */;
 			buildPhases = (
 				CD66FB571FE46DD40090D6A3 /* Sources */,
 				CD66FB581FE46DD40090D6A3 /* Frameworks */,
@@ -185,9 +186,9 @@
 			dependencies = (
 				CD66FB5D1FE46DD40090D6A3 /* PBXTargetDependency */,
 			);
-			name = TestWithTablesUITests;
+			name = Disco3UITests;
 			productName = TestWithTablesUITests;
-			productReference = CD66FB5B1FE46DD40090D6A3 /* TestWithTablesUITests.xctest */;
+			productReference = CD66FB5B1FE46DD40090D6A3 /* Disco3UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CD66FB371FE46DD40090D6A3 /* Build configuration list for PBXProject "TestWithTables" */;
+			buildConfigurationList = CD66FB371FE46DD40090D6A3 /* Build configuration list for PBXProject "Disco3" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,9 +230,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD66FB3B1FE46DD40090D6A3 /* TestWithTables */,
-				CD66FB4F1FE46DD40090D6A3 /* TestWithTablesTests */,
-				CD66FB5A1FE46DD40090D6A3 /* TestWithTablesUITests */,
+				CD66FB3B1FE46DD40090D6A3 /* Disco3 */,
+				CD66FB4F1FE46DD40090D6A3 /* Disco3Tests */,
+				CD66FB5A1FE46DD40090D6A3 /* Disco3UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,12 +298,12 @@
 /* Begin PBXTargetDependency section */
 		CD66FB521FE46DD40090D6A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CD66FB3B1FE46DD40090D6A3 /* TestWithTables */;
+			target = CD66FB3B1FE46DD40090D6A3 /* Disco3 */;
 			targetProxy = CD66FB511FE46DD40090D6A3 /* PBXContainerItemProxy */;
 		};
 		CD66FB5D1FE46DD40090D6A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CD66FB3B1FE46DD40090D6A3 /* TestWithTables */;
+			target = CD66FB3B1FE46DD40090D6A3 /* Disco3 */;
 			targetProxy = CD66FB5C1FE46DD40090D6A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -428,7 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestWithTables/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = laurabelle.TestWithTables;
+				PRODUCT_BUNDLE_IDENTIFIER = laurabelle.Disco3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -440,7 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestWithTables/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = laurabelle.TestWithTables;
+				PRODUCT_BUNDLE_IDENTIFIER = laurabelle.Disco3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -456,7 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = laurabelle.TestWithTablesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestWithTables.app/TestWithTables";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Disco3.app/Disco3";
 			};
 			name = Debug;
 		};
@@ -470,7 +471,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = laurabelle.TestWithTablesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestWithTables.app/TestWithTables";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Disco3.app/Disco3";
 			};
 			name = Release;
 		};
@@ -503,7 +504,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD66FB371FE46DD40090D6A3 /* Build configuration list for PBXProject "TestWithTables" */ = {
+		CD66FB371FE46DD40090D6A3 /* Build configuration list for PBXProject "Disco3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD66FB621FE46DD40090D6A3 /* Debug */,
@@ -512,29 +513,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD66FB641FE46DD40090D6A3 /* Build configuration list for PBXNativeTarget "TestWithTables" */ = {
+		CD66FB641FE46DD40090D6A3 /* Build configuration list for PBXNativeTarget "Disco3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD66FB651FE46DD40090D6A3 /* Debug */,
 				CD66FB661FE46DD40090D6A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		CD66FB671FE46DD40090D6A3 /* Build configuration list for PBXNativeTarget "TestWithTablesTests" */ = {
+		CD66FB671FE46DD40090D6A3 /* Build configuration list for PBXNativeTarget "Disco3Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD66FB681FE46DD40090D6A3 /* Debug */,
 				CD66FB691FE46DD40090D6A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		CD66FB6A1FE46DD40090D6A3 /* Build configuration list for PBXNativeTarget "TestWithTablesUITests" */ = {
+		CD66FB6A1FE46DD40090D6A3 /* Build configuration list for PBXNativeTarget "Disco3UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD66FB6B1FE46DD40090D6A3 /* Debug */,
 				CD66FB6C1FE46DD40090D6A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
