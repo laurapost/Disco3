@@ -57,8 +57,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //MARK: Actions
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //Handle the text field's user input
         nameTextField.delegate = self
+       
+        // Set up views if editing an existing Meal.
+        if let discussion = discussion {
+            navigationItem.title = discussion.name
+            nameTextField.text   = discussion.name
+        }
+       
         //Enable the Save button only if the text field has a valid discussion name
         updateSaveButtonState()
     }

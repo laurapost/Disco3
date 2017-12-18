@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class DiscussionTableViewController: UITableViewController {
     
@@ -85,15 +86,32 @@ class DiscussionTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
 
+    //MARK: - Navigation
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        super.prepare(for: segue, sender: sender)
+        
+        switch(segue.identifier ?? "") {
+            case "AddItem":
+                os_log("Adding a new meal.", log: OSLog.default, type: .debug)
+            case "ShowDetail":
+                guard let DiscussionDetailViewController = segue.destination as? ViewController else {
+                    fatalError("Unexpected destination: \(segue.destination)")
+            }
+                guard let selectedDiscussionCell = sender as? DiscussionTableViewCell else {
+                    fatalError("Unexpected sender: \(String(describing: sender))")
+            }
+                guard let indexPath = tableView.indexPath(for: selectedDiscussionCell) else {
+                    fatalError("The selected cell is not being displayed by the table")
+            }
+            let selectedDiscussion = discussions[indexPath.row]
+            DiscussionDetailViewController.discussion = selectedDiscussion
+        default:
+            fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
+        }
     }
-    */
     
     //MARK: Private Methods
     private func loadSampleDiscussions() {
@@ -107,9 +125,18 @@ class DiscussionTableViewController: UITableViewController {
     //MARK: Actions
     @IBAction func unwindToDiscussionList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? ViewController, let discussion = sourceViewController.discussion {
-            let newIndexPath = IndexPath(row: discussions.count, section: 0)
-            discussions.append(discussion)
-            tableView.insertRows(at: [newIndexPath], with: .automatic)
+            
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                //Update an existing discussion
+                discussions[selectedIndexPath.row] = discussion
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+            }
+            else {
+                //Add a new meal
+                let newIndexPath = IndexPath(row: discussions.count, section: 0)
+                discussions.append(discussion)
+                tableView.insertRows(at: [newIndexPath], with: .automatic)
+            }
         }
     }
 }

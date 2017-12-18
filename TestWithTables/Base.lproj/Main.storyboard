@@ -13,21 +13,21 @@
         <!--Your Discussions-->
         <scene sceneID="IOH-0r-jYC">
             <objects>
-                <tableViewController id="X8Q-hX-Miw" customClass="DiscussionTableViewController" customModule="TestWithTables" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="W2m-TG-NPT">
+                <tableViewController id="X8Q-hX-Miw" customClass="DiscussionTableViewController" customModule="Disco3" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" id="W2m-TG-NPT">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscussionTableViewCell" rowHeight="90" id="ug9-Fx-C2I" customClass="DiscussionTableViewCell" customModule="TestWithTables" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="768" height="90"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DiscussionTableViewCell" rowHeight="92" id="ug9-Fx-C2I" customClass="DiscussionTableViewCell" customModule="Disco3" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="768" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ug9-Fx-C2I" id="DpE-3c-2Gl">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="89.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="702" height="91.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGg-Xb-30d">
-                                            <rect key="frame" x="8" y="34" width="359" height="21"/>
+                                            <rect key="frame" x="8" y="30" width="359" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                             <nil key="textColor"/>
@@ -37,6 +37,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="bGg-Xb-30d" id="Z1z-5v-Mkf"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="qoD-yp-rQL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -56,12 +57,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6J-Ru-rCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="36"/>
+            <point key="canvasLocation" x="995.3125" y="35.7421875"/>
         </scene>
         <!--New Discussion-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestWithTables" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Disco3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -213,7 +214,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZj-O7-dNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1753.125" y="36.328125"/>
+            <point key="canvasLocation" x="1807" y="422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ctF-ek-nk7">
@@ -234,4 +235,7 @@
             <point key="canvasLocation" x="-1252" y="36"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qoD-yp-rQL"/>
+    </inferredMetricsTieBreakers>
 </document>
