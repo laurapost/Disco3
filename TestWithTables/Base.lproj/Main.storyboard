@@ -37,7 +37,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="bGg-Xb-30d" id="Z1z-5v-Mkf"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="qoD-yp-rQL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -128,7 +127,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbQ-fr-vRR">
-                                <rect key="frame" x="408" y="406" width="300" height="300"/>
+                                <rect key="frame" x="408" y="362" width="300" height="300"/>
                                 <color key="backgroundColor" red="0.3969057714" green="0.74963057129999999" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="eAk-zQ-wBD"/>
@@ -143,7 +142,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTX-mz-c4C">
-                                <rect key="frame" x="60" y="406" width="300" height="300"/>
+                                <rect key="frame" x="60" y="362" width="300" height="300"/>
                                 <color key="backgroundColor" red="0.3969057714152241" green="0.74963057131064448" blue="0.99193829298019409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="72y-zJ-hTM"/>
@@ -155,7 +154,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Disco App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrH-cB-1Bl">
-                                <rect key="frame" x="151" y="161" width="467" height="77"/>
+                                <rect key="frame" x="151" y="117" width="467" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="4Su-IG-mTk"/>
                                 </constraints>
@@ -217,7 +216,4 @@
             <point key="canvasLocation" x="1807" y="422"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="qoD-yp-rQL"/>
-    </inferredMetricsTieBreakers>
 </document>
