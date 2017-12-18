@@ -105,10 +105,10 @@
 			children = (
 				CD66FB3F1FE46DD40090D6A3 /* AppDelegate.swift */,
 				CD66FB411FE46DD40090D6A3 /* ViewController.swift */,
-				CD66FB431FE46DD40090D6A3 /* Main.storyboard */,
 				CD66FB731FE4A6ED0090D6A3 /* DiscussionTableViewController.swift */,
 				CD66FB711FE4A4FA0090D6A3 /* DiscussionTableViewCell.swift */,
 				CD66FB6F1FE49FDD0090D6A3 /* Discussion.swift */,
+				CD66FB431FE46DD40090D6A3 /* Main.storyboard */,
 				CD66FB461FE46DD40090D6A3 /* Assets.xcassets */,
 				CD66FB481FE46DD40090D6A3 /* LaunchScreen.storyboard */,
 				CD66FB4B1FE46DD40090D6A3 /* Info.plist */,
