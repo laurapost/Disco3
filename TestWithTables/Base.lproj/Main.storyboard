@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17C88" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ve3-gi-wm4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1114" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ve3-gi-wm4">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="28" width="768" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ug9-Fx-C2I" id="DpE-3c-2Gl">
-                                    <rect key="frame" x="0.0" y="0.0" width="702" height="91.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="702" height="92"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGg-Xb-30d">
@@ -126,33 +126,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbQ-fr-vRR">
-                                <rect key="frame" x="408" y="362" width="300" height="300"/>
-                                <color key="backgroundColor" red="0.0" green="0.99598842859268188" blue="0.90565097332000732" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="eAk-zQ-wBD"/>
-                                    <constraint firstAttribute="height" constant="300" id="ib7-AK-xqe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="35"/>
-                                <state key="normal" title="I am a Teacher">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="kuL-Eu-eq4" kind="show" id="p7h-m4-0Vv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTX-mz-c4C">
-                                <rect key="frame" x="60" y="362" width="300" height="300"/>
-                                <color key="backgroundColor" red="0.0" green="0.99598842859268188" blue="0.90565097332000732" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="72y-zJ-hTM"/>
-                                    <constraint firstAttribute="height" constant="300" id="Be1-wT-nWb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="35"/>
-                                <state key="normal" title="I am a Student">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Disco App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrH-cB-1Bl">
                                 <rect key="frame" x="115.5" y="117" width="538" height="77"/>
                                 <constraints>
@@ -162,14 +135,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbQ-fr-vRR">
+                                <rect key="frame" x="298.5" y="486.5" width="171" height="51"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="35"/>
+                                <state key="normal" title="Get Started!"/>
+                                <connections>
+                                    <segue destination="kuL-Eu-eq4" kind="show" id="p7h-m4-0Vv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="cbQ-fr-vRR" secondAttribute="trailing" constant="40" id="4nk-aA-9UW"/>
-                            <constraint firstItem="MTX-mz-c4C" firstAttribute="leading" secondItem="hkv-C5-ler" secondAttribute="leadingMargin" constant="40" id="8F7-qs-Mav"/>
                             <constraint firstItem="GrH-cB-1Bl" firstAttribute="centerX" secondItem="hkv-C5-ler" secondAttribute="centerX" id="F29-xC-J68"/>
                             <constraint firstItem="GrH-cB-1Bl" firstAttribute="top" secondItem="7oK-qT-3dR" secondAttribute="bottom" constant="97" id="QV3-wC-HAE"/>
-                            <constraint firstItem="MTX-mz-c4C" firstAttribute="top" secondItem="GrH-cB-1Bl" secondAttribute="bottom" constant="168" id="sOZ-dt-R2k"/>
-                            <constraint firstItem="cbQ-fr-vRR" firstAttribute="top" secondItem="GrH-cB-1Bl" secondAttribute="bottom" constant="168" id="wGR-Gl-E33"/>
+                            <constraint firstItem="cbQ-fr-vRR" firstAttribute="centerY" secondItem="hkv-C5-ler" secondAttribute="centerY" id="oBE-82-w2t"/>
+                            <constraint firstItem="cbQ-fr-vRR" firstAttribute="centerX" secondItem="hkv-C5-ler" secondAttribute="centerX" id="pVM-KJ-myo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NZo-O1-fnn"/>
