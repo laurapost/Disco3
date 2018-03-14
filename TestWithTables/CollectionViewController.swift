@@ -15,10 +15,16 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.navigationItem.leftBarButtonItem = self.editButtonItem
+        
         // Do any additional setup after loading the view.
     }
-
+   
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -30,7 +36,8 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as? CollectionViewCell
-        cell?.studentLabel.text = items[indexPath.item]
+        cell?.studentLabel.text = "Enter Name"
+            //items[indexPath.item]
         return cell!
     }
     
