@@ -7,11 +7,22 @@
 //
 
 import UIKit
+import os.log
 
-class CollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class CollectionViewController: UICollectionViewController {
 
     //MARK: Properties
-    let items = ["Student 1", "Student 2", "Student 3", "Student 4", "Student 5", "Student 6", "Student 7", "Student 8", "Student 9", "Student 10", "Student 11", "Student 12", "Student 13", "Student 14", "Student 15", "Student 16", "Student 17", "Student 18", "Student 18", "Student 19", "Student 20", "Student 21", "Student 22", "Student 23", "Student 24", "Student 25"]
+    var students = [Student]()
+    
+    //MARK: Actions
+    @IBAction func unwindToStudentList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? CreateStudentViewController, let student = sourceViewController.student {
+            //Add a new student
+            let newIndexPath = IndexPath(item: students.count, section: 0)
+            students.append(student)
+            collectionView?.insertItems(at: [newIndexPath])
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,18 +36,18 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
         // Dispose of any resources that can be recreated.
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return items.count
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return students.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as? CollectionViewCell
-        cell?.studentLabel.text = "Enter Name"
-            //items[indexPath.item]
+        let student = students[indexPath.item]
+        cell?.studentLabel.text = student.studentName
         return cell!
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.item)
     }
     

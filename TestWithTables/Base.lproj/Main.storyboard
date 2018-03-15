@@ -112,41 +112,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="0Ah-PZ-fLo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2657" y="35"/>
+            <point key="canvasLocation" x="2323" y="34"/>
         </scene>
-        <!--View Controller-->
+        <!--New Student-->
         <scene sceneID="Jp2-uO-1zU">
             <objects>
-                <viewController id="zRG-s3-yVF" sceneMemberID="viewController">
+                <viewController id="zRG-s3-yVF" customClass="CreateStudentViewController" customModule="Disco3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zV1-cD-4VH"/>
                         <viewControllerLayoutGuide type="bottom" id="JpS-Vp-Xoy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RxZ-EU-FmQ">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter your full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWv-td-nYv">
-                                <rect key="frame" x="20" y="28" width="393" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fVA-WZ-fXX">
-                                <rect key="frame" x="20" y="106" width="393" height="30"/>
+                                <rect key="frame" x="20" y="136" width="244" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter your full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWv-td-nYv">
+                                <rect key="frame" x="20" y="64" width="393" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="New Student" id="Cw4-UG-EqK">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="rpV-Jb-9bH"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Glq-ub-qas">
+                            <connections>
+                                <segue destination="PjU-Wi-atZ" kind="unwind" unwindAction="unwindToStudentListWithSender:" id="6Iy-Ps-qNK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="saveStudent" destination="Glq-ub-qas" id="F8i-B6-8uy"/>
+                        <outlet property="studentTextField" destination="fVA-WZ-fXX" id="fZ4-Cm-Baz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKj-a6-n2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="PjU-Wi-atZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2656.5" y="930"/>
+            <point key="canvasLocation" x="3111" y="930"/>
         </scene>
         <!--Name of Discussion-->
         <scene sceneID="a2I-KH-8d9">
@@ -210,7 +223,7 @@
                         <barButtonItem key="backBarButtonItem" id="tJS-iu-eZf"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="VCP-uk-owG">
                             <connections>
-                                <segue destination="zRG-s3-yVF" kind="popoverPresentation" popoverAnchorBarButtonItem="VCP-uk-owG" id="CEC-1t-W95">
+                                <segue destination="a3e-y4-1RS" kind="popoverPresentation" identifier="AddCollectionCell" popoverAnchorBarButtonItem="VCP-uk-owG" id="CEC-1t-W95">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                 </segue>
                             </connections>
@@ -263,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHN-ad-s44" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-760" y="35"/>
+            <point key="canvasLocation" x="64" y="34"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kgI-Li-o6v">
@@ -281,7 +294,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDE-0C-Frm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="383" y="35"/>
+            <point key="canvasLocation" x="814" y="34"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OxN-lj-ql5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a3e-y4-1RS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uZG-uD-zeG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zRG-s3-yVF" kind="relationship" relationship="rootViewController" id="F5n-0P-LVy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F49-ne-zmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2323" y="930"/>
         </scene>
     </scenes>
 </document>
