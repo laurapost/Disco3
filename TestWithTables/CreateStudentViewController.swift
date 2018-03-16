@@ -43,7 +43,7 @@ class CreateStudentViewController: UIViewController, UITextFieldDelegate, UINavi
     
     // MARK: - Navigation
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+  /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         //Configure the destination view controller only when the save button is pressed
         guard let button = sender as? UIBarButtonItem, button === saveStudent else {
@@ -54,5 +54,6 @@ class CreateStudentViewController: UIViewController, UITextFieldDelegate, UINavi
         //set the student to be passed to collectionviewcontroller after the unwind segue
         student = Student(name: name, number: 0)
     }
+ */
 
 }

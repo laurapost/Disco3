@@ -9,20 +9,21 @@
 import UIKit
 import os.log
 
-class CollectionViewController: UICollectionViewController {
+class CollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     //MARK: Properties
     var students = [Student]()
     
     //MARK: Actions
-    @IBAction func unwindToStudentList(sender: UIStoryboardSegue) {
+@IBAction func unwindToStudentList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? CreateStudentViewController, let student = sourceViewController.student {
             //Add a new student
             let newIndexPath = IndexPath(item: students.count, section: 0)
             students.append(student)
-            collectionView?.insertItems(at: [newIndexPath])
+            collectionView.insertItems(at: [newIndexPath])
         }
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,18 +37,18 @@ class CollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return students.count
     }
     
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as? CollectionViewCell
         let student = students[indexPath.item]
         cell?.studentLabel.text = student.studentName
         return cell!
     }
     
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.item)
     }
     
