@@ -15,11 +15,12 @@ class Student {
     //MARK- Properties
     var studentName: String
     var points: Int
+    var comments: String
     
     //Initializer
-    init (name: String, number: Int) {
+    init (name: String, number: Int, teacherComments: String) {
         self.studentName = name
         self.points = number
+        self.comments = teacherComments
     }
-    
 }

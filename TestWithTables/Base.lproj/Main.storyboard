@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17D102" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ve3-gi-wm4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17D102" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kuL-Eu-eq4">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -126,13 +127,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fVA-WZ-fXX">
-                                <rect key="frame" x="20" y="136" width="244" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter your full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWv-td-nYv">
                                 <rect key="frame" x="20" y="64" width="393" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -140,11 +134,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fVA-WZ-fXX">
+                                <rect key="frame" x="20" y="111" width="244" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Student" id="Cw4-UG-EqK">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="rpV-Jb-9bH"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="rpV-Jb-9bH">
+                            <connections>
+                                <action selector="cancelStudent:" destination="zRG-s3-yVF" id="0bz-W9-x9m"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Glq-ub-qas">
                             <connections>
                                 <segue destination="PjU-Wi-atZ" kind="unwind" unwindAction="unwindToStudentListWithSender:" id="6Iy-Ps-qNK"/>
@@ -199,7 +204,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="studentLabel" destination="BBC-3d-zJj" id="ifh-QX-oEB"/>
                                         </connections>
@@ -221,62 +226,25 @@
                     </view>
                     <navigationItem key="navigationItem" title="Name of Discussion" id="qfj-uD-aDL">
                         <barButtonItem key="backBarButtonItem" id="tJS-iu-eZf"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="VCP-uk-owG">
-                            <connections>
-                                <segue destination="a3e-y4-1RS" kind="popoverPresentation" identifier="AddCollectionCell" popoverAnchorBarButtonItem="VCP-uk-owG" id="CEC-1t-W95">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="VCP-uk-owG">
+                                <connections>
+                                    <segue destination="a3e-y4-1RS" kind="popoverPresentation" identifier="AddCollectionCell" popoverAnchorBarButtonItem="VCP-uk-owG" id="CEC-1t-W95">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="action" id="KHl-dW-smw"/>
+                            <barButtonItem title="Save Format as a Class" id="flw-Ob-9jk"/>
+                        </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="t4V-cj-h6l" id="mQs-6g-gNf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YQ3-ot-Y35" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="930"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="zeq-7S-xdF">
-            <objects>
-                <viewController id="Ve3-gi-wm4" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7oK-qT-3dR"/>
-                        <viewControllerLayoutGuide type="bottom" id="3ie-6m-4vh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hkv-C5-ler">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Disco App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrH-cB-1Bl">
-                                <rect key="frame" x="243" y="117" width="538" height="77"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="77" id="4Su-IG-mTk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbQ-fr-vRR">
-                                <rect key="frame" x="426.5" y="358.5" width="171" height="51"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="35"/>
-                                <state key="normal" title="Get Started!"/>
-                                <connections>
-                                    <segue destination="kuL-Eu-eq4" kind="show" id="p7h-m4-0Vv"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="GrH-cB-1Bl" firstAttribute="centerX" secondItem="hkv-C5-ler" secondAttribute="centerX" id="F29-xC-J68"/>
-                            <constraint firstItem="GrH-cB-1Bl" firstAttribute="top" secondItem="7oK-qT-3dR" secondAttribute="bottom" constant="97" id="QV3-wC-HAE"/>
-                            <constraint firstItem="cbQ-fr-vRR" firstAttribute="centerY" secondItem="hkv-C5-ler" secondAttribute="centerY" id="oBE-82-w2t"/>
-                            <constraint firstItem="cbQ-fr-vRR" firstAttribute="centerX" secondItem="hkv-C5-ler" secondAttribute="centerX" id="pVM-KJ-myo"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="NZo-O1-fnn"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fHN-ad-s44" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="64" y="34"/>
+            <point key="canvasLocation" x="1547.4609375" y="929.6875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kgI-Li-o6v">

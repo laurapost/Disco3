@@ -12,6 +12,8 @@ import os.log
 class CollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     //MARK: Properties
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     var students = [Student]()
     
     //MARK: Actions
