@@ -11,6 +11,10 @@
 		190C5EB62005339100154795 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190C5EB52005339100154795 /* CollectionViewController.swift */; };
 		CD2F3B142059F1C60001B787 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F3B132059F1C60001B787 /* Student.swift */; };
 		CD2F3B162059FD1C0001B787 /* CreateStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F3B152059FD1C0001B787 /* CreateStudentViewController.swift */; };
+		CD4C435F20616B8D00EA9EFB /* ClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C435E20616B8D00EA9EFB /* ClassesTableViewController.swift */; };
+		CD4C436120616CEF00EA9EFB /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C436020616CEF00EA9EFB /* ClassTableViewCell.swift */; };
+		CD4C43632061820B00EA9EFB /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C43622061820B00EA9EFB /* Class.swift */; };
+		CD4C43652062C3B900EA9EFB /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C43642062C3B900EA9EFB /* CreateClassViewController.swift */; };
 		CD66FB401FE46DD40090D6A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD66FB3F1FE46DD40090D6A3 /* AppDelegate.swift */; };
 		CD66FB421FE46DD40090D6A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD66FB411FE46DD40090D6A3 /* ViewController.swift */; };
 		CD66FB451FE46DD40090D6A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD66FB431FE46DD40090D6A3 /* Main.storyboard */; };
@@ -45,6 +49,10 @@
 		190C5EB52005339100154795 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		CD2F3B132059F1C60001B787 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		CD2F3B152059FD1C0001B787 /* CreateStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateStudentViewController.swift; sourceTree = "<group>"; };
+		CD4C435E20616B8D00EA9EFB /* ClassesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassesTableViewController.swift; path = ../ClassesTableViewController.swift; sourceTree = "<group>"; };
+		CD4C436020616CEF00EA9EFB /* ClassTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
+		CD4C43622061820B00EA9EFB /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		CD4C43642062C3B900EA9EFB /* CreateClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
 		CD66FB3C1FE46DD40090D6A3 /* Disco3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Disco3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD66FB3F1FE46DD40090D6A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD66FB411FE46DD40090D6A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +129,10 @@
 				CD2F3B152059FD1C0001B787 /* CreateStudentViewController.swift */,
 				190C5EB52005339100154795 /* CollectionViewController.swift */,
 				190C5EB3200531F500154795 /* CollectionViewCell.swift */,
+				CD4C435E20616B8D00EA9EFB /* ClassesTableViewController.swift */,
+				CD4C43622061820B00EA9EFB /* Class.swift */,
+				CD4C436020616CEF00EA9EFB /* ClassTableViewCell.swift */,
+				CD4C43642062C3B900EA9EFB /* CreateClassViewController.swift */,
 				CD66FB461FE46DD40090D6A3 /* Assets.xcassets */,
 				CD66FB481FE46DD40090D6A3 /* LaunchScreen.storyboard */,
 				CD66FB4B1FE46DD40090D6A3 /* Info.plist */,
@@ -281,13 +293,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD4C43632061820B00EA9EFB /* Class.swift in Sources */,
+				CD4C435F20616B8D00EA9EFB /* ClassesTableViewController.swift in Sources */,
 				CD66FB701FE49FDD0090D6A3 /* Discussion.swift in Sources */,
+				CD4C43652062C3B900EA9EFB /* CreateClassViewController.swift in Sources */,
 				CD66FB421FE46DD40090D6A3 /* ViewController.swift in Sources */,
 				190C5EB4200531F500154795 /* CollectionViewCell.swift in Sources */,
 				CD66FB401FE46DD40090D6A3 /* AppDelegate.swift in Sources */,
 				190C5EB62005339100154795 /* CollectionViewController.swift in Sources */,
 				CD66FB721FE4A4FA0090D6A3 /* DiscussionTableViewCell.swift in Sources */,
 				CD66FB741FE4A6ED0090D6A3 /* DiscussionTableViewController.swift in Sources */,
+				CD4C436120616CEF00EA9EFB /* ClassTableViewCell.swift in Sources */,
 				CD2F3B162059FD1C0001B787 /* CreateStudentViewController.swift in Sources */,
 				CD2F3B142059F1C60001B787 /* Student.swift in Sources */,
 			);
