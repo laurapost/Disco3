@@ -27,7 +27,9 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         addStudentTextField.delegate = self
+        rosterNameTextField.delegate = self
         tableView.tableFooterView = UIView(frame: CGRect.zero)
+        updateSaveButtonState()
     }
 
     @IBAction func addStudent(_ sender: Any) {
@@ -46,10 +48,25 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
     
+    //MARK: UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         //Hide the keyboard
         textField.resignFirstResponder()
         return true
+    }
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        //Disable the save button while editing.
+        saveButton.isEnabled = false
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        updateSaveButtonState()
+    }
+    
+    //MARK: Private methods
+    private func updateSaveButtonState() {
+        //Disable the save button if the text field is empty
+        let text = rosterNameTextField.text ?? ""
+        saveButton.isEnabled = !text.isEmpty
     }
     
     //MARK: Navigation
