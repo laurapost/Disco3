@@ -8,14 +8,21 @@
 
 import UIKit
 import SafariServices
+import os.log
 
 class CreateClassViewController: UIViewController, UITextFieldDelegate {
 
     //MARK: Properties
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addStudentTextField: UITextField!
+    @IBOutlet weak var rosterNameTextField: UITextField!
     
     var students = [Student]()
+    
+    var roster: Class?
+    
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +50,19 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
         //Hide the keyboard
         textField.resignFirstResponder()
         return true
+    }
+    
+    //MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        // Configure the destination view controller only when the save button is pressed.
+        guard let button = sender as? UIBarButtonItem, button === saveButton else {
+            os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
+            return
+        }
+        let name = rosterNameTextField.text ?? ""
+        let arr: [Student] = students
+        roster = Class(name: name, students: arr)
     }
 }
 

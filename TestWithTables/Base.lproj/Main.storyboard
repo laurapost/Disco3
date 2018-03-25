@@ -421,14 +421,21 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Class" id="5MW-zX-FlV">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nNv-UB-AnK"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="f58-uC-62O"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="f58-uC-62O">
+                            <connections>
+                                <segue destination="oTq-9x-4Cg" kind="unwind" unwindAction="unwindToClassListWithSender:" id="4ig-ZI-Bhu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addStudentTextField" destination="FjO-7F-VeG" id="GyV-dq-fhf"/>
+                        <outlet property="rosterNameTextField" destination="ZaU-Bn-QTC" id="yDQ-2D-XCI"/>
+                        <outlet property="saveButton" destination="f58-uC-62O" id="YfD-XX-68N"/>
                         <outlet property="tableView" destination="034-vX-Mnu" id="6kT-Gv-al1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJr-16-lF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="oTq-9x-4Cg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2360.7421875" y="1018.75"/>
         </scene>
