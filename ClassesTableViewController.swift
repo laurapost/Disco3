@@ -9,10 +9,11 @@
 import UIKit
 import os.log
 
+    var classes = [Class]()
+
 class ClassesTableViewController: UITableViewController {
 
     //MARK: Properties
-    var classes = [Class]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

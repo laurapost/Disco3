@@ -10,7 +10,6 @@
 		190C5EB4200531F500154795 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190C5EB3200531F500154795 /* CollectionViewCell.swift */; };
 		190C5EB62005339100154795 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190C5EB52005339100154795 /* CollectionViewController.swift */; };
 		CD2F3B142059F1C60001B787 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F3B132059F1C60001B787 /* Student.swift */; };
-		CD2F3B162059FD1C0001B787 /* CreateStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F3B152059FD1C0001B787 /* CreateStudentViewController.swift */; };
 		CD395EA9206732C0004B01A9 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD395EA8206732C0004B01A9 /* StudentTableViewCell.swift */; };
 		CD4C435F20616B8D00EA9EFB /* ClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C435E20616B8D00EA9EFB /* ClassesTableViewController.swift */; };
 		CD4C436120616CEF00EA9EFB /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C436020616CEF00EA9EFB /* ClassTableViewCell.swift */; };
@@ -49,7 +48,6 @@
 		190C5EB3200531F500154795 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		190C5EB52005339100154795 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		CD2F3B132059F1C60001B787 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
-		CD2F3B152059FD1C0001B787 /* CreateStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateStudentViewController.swift; sourceTree = "<group>"; };
 		CD395EA8206732C0004B01A9 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		CD4C435E20616B8D00EA9EFB /* ClassesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassesTableViewController.swift; path = ../ClassesTableViewController.swift; sourceTree = "<group>"; };
 		CD4C436020616CEF00EA9EFB /* ClassTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 				CD66FB711FE4A4FA0090D6A3 /* DiscussionTableViewCell.swift */,
 				CD66FB6F1FE49FDD0090D6A3 /* Discussion.swift */,
 				CD66FB431FE46DD40090D6A3 /* Main.storyboard */,
-				CD2F3B152059FD1C0001B787 /* CreateStudentViewController.swift */,
 				190C5EB52005339100154795 /* CollectionViewController.swift */,
 				190C5EB3200531F500154795 /* CollectionViewCell.swift */,
 				CD4C435E20616B8D00EA9EFB /* ClassesTableViewController.swift */,
@@ -308,7 +305,6 @@
 				CD66FB741FE4A6ED0090D6A3 /* DiscussionTableViewController.swift in Sources */,
 				CD4C436120616CEF00EA9EFB /* ClassTableViewCell.swift in Sources */,
 				CD395EA9206732C0004B01A9 /* StudentTableViewCell.swift in Sources */,
-				CD2F3B162059FD1C0001B787 /* CreateStudentViewController.swift in Sources */,
 				CD2F3B142059F1C60001B787 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
