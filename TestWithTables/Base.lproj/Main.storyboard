@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17C88" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DLn-Ni-C46">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17D102" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DLn-Ni-C46">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -95,6 +95,10 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-Kp-A3J">
                                 <rect key="frame" x="0.0" y="166" width="1024" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="dkO-sa-IbZ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6OG-sm-tDN"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -118,6 +122,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="O8y-67-0QA" id="hmP-3u-fsI"/>
+                        <outlet property="pickerView" destination="D5V-Kp-A3J" id="Xjn-Fe-Ssd"/>
                         <outlet property="saveButton" destination="vep-ia-qDx" id="JeX-io-sTD"/>
                     </connections>
                 </viewController>

@@ -9,14 +9,25 @@
 import UIKit
 import os.log
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     
     //MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
-    
     @IBOutlet weak var saveButton: UIBarButtonItem!
-    
+    @IBOutlet weak var pickerView: UIPickerView!
     var discussion: Discussion?
+    var periods: [Class] = classes
+    
+    //MARK: Pickerview functions
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return periods[row].name
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return periods.count
+    }
     
     //MARK: UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

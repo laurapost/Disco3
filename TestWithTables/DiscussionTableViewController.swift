@@ -19,15 +19,7 @@ class DiscussionTableViewController: UITableViewController {
         
         //Use the edit button item provided by table view controller
         navigationItem.leftBarButtonItem = editButtonItem
-        
-        //Load any saved discussions, otherwise load sample data
-        if let savedDiscussions = loadDiscussions() {
-            discussions += savedDiscussions
-        }
-        else {
-            //Load sample data
-            loadSampleDiscussions()
-        }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,7 +64,6 @@ class DiscussionTableViewController: UITableViewController {
         if editingStyle == .delete {
             // Delete the row from the data source
             discussions.remove(at: indexPath.row)
-            saveDiscussions()
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -103,26 +94,6 @@ class DiscussionTableViewController: UITableViewController {
         }
    */
     
-    //MARK: Private Methods
-    private func loadSampleDiscussions() {
-        let discussion1 = Discussion(name: "Discussion 1")
-        let discussion2 = Discussion(name: "Discussion 2")
-        let discussion3 = Discussion(name: "Discussion 3")
-        
-        discussions += [discussion1, discussion2, discussion3]
-    }
-    private func saveDiscussions() {
-        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(discussions, toFile: Discussion.ArchiveURL.path)
-        if isSuccessfulSave {
-            os_log("Discussions Successfully saved.", log: OSLog.default, type: .debug)
-        }
-        else {
-            os_log("Failed to save discussions...", log: OSLog.default, type: .error)
-        }
-    }
-    private func loadDiscussions() -> [Discussion]? {
-        return NSKeyedUnarchiver.unarchiveObject(withFile: Discussion.ArchiveURL.path) as? [Discussion]
-    }
     
     //MARK: Actions
     @IBAction func unwindToDiscussionList(sender: UIStoryboardSegue) {
@@ -132,9 +103,6 @@ class DiscussionTableViewController: UITableViewController {
             let newIndexPath = IndexPath(row: discussions.count, section: 0)
             discussions.append(discussion)
             tableView.insertRows(at: [newIndexPath], with: .automatic)
-           
-            //Save the discussions
-            saveDiscussions()
         }
     }
 }
