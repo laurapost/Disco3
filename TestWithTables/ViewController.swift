@@ -28,6 +28,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return periods.count
     }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        discussion = Discussion(name: nameTextField.text!, students: periods[row].students)
+    }
     
     //MARK: UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -71,8 +74,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
             os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
             return
         }
-        let name = nameTextField.text ?? ""
-        discussion = Discussion(name: name)
+       // let name = nameTextField.text ?? ""
+       // discussion = Discussion(name: name, students: students)
         
     }
     
