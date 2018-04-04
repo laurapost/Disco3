@@ -264,9 +264,6 @@
                                 <color key="textColor" red="0.0" green="0.46412841431196128" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.54151637794470919" green="0.68107973947233169" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" image="DiscoIcon copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ve5-A6-4g0">
-                                <rect key="frame" x="420" y="172" width="184" height="96"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgb-MB-oDT">
                                 <rect key="frame" x="653" y="380" width="245" height="150"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -279,20 +276,23 @@
                                     <segue destination="X8Q-hX-Miw" kind="show" id="GZa-fy-PWh"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" image="DiscoIcon copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ve5-A6-4g0">
+                                <rect key="frame" x="125" y="206" width="772" height="96"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="m6i-kd-emJ" firstAttribute="top" secondItem="me8-xA-30f" secondAttribute="bottom" constant="38" id="508-Nv-pcu"/>
-                            <constraint firstItem="Ve5-A6-4g0" firstAttribute="leading" secondItem="et1-LU-5qj" secondAttribute="leadingMargin" constant="400" id="6ly-aj-u7M"/>
-                            <constraint firstItem="Ve5-A6-4g0" firstAttribute="top" secondItem="m6i-kd-emJ" secondAttribute="bottom" constant="12" id="HqA-um-hxd"/>
+                            <constraint firstItem="Ve5-A6-4g0" firstAttribute="top" secondItem="m6i-kd-emJ" secondAttribute="bottom" constant="100" id="HqA-um-hxd"/>
+                            <constraint firstItem="Ve5-A6-4g0" firstAttribute="leading" secondItem="et1-LU-5qj" secondAttribute="leading" constant="200" id="K8U-aP-gx5"/>
                             <constraint firstItem="m6i-kd-emJ" firstAttribute="centerX" secondItem="et1-LU-5qj" secondAttribute="centerX" id="KOy-yD-eSI"/>
-                            <constraint firstItem="Ve5-A6-4g0" firstAttribute="top" secondItem="m6i-kd-emJ" secondAttribute="bottom" constant="12" id="Meb-RW-V9q"/>
                             <constraint firstItem="HgE-86-eVP" firstAttribute="baseline" secondItem="cgb-MB-oDT" secondAttribute="baseline" id="RTS-0h-NkD"/>
                             <constraint firstItem="HgE-86-eVP" firstAttribute="leading" secondItem="et1-LU-5qj" secondAttribute="leadingMargin" constant="105" id="RZO-8p-nBj"/>
                             <constraint firstItem="RE7-im-HK4" firstAttribute="top" secondItem="Ve5-A6-4g0" secondAttribute="bottom" constant="500" id="S2z-jf-Z1h"/>
+                            <constraint firstAttribute="trailing" secondItem="Ve5-A6-4g0" secondAttribute="trailing" constant="200" id="VS0-zo-eba"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cgb-MB-oDT" secondAttribute="trailing" constant="106" id="ie9-Y7-qtE"/>
+                            <constraint firstItem="cgb-MB-oDT" firstAttribute="top" secondItem="Ve5-A6-4g0" secondAttribute="bottom" constant="112" id="kdZ-iB-5Tl"/>
                             <constraint firstItem="RE7-im-HK4" firstAttribute="top" secondItem="cgb-MB-oDT" secondAttribute="bottom" constant="238" id="unp-zo-mvd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ve5-A6-4g0" secondAttribute="trailing" constant="400" id="upi-fE-mTj"/>
                             <constraint firstItem="RE7-im-HK4" firstAttribute="top" secondItem="HgE-86-eVP" secondAttribute="bottom" constant="238" id="yjf-PU-01N"/>
                         </constraints>
                     </view>
