@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17D102" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DLn-Ni-C46">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17C88" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DLn-Ni-C46">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ug9-Fx-C2I" id="DpE-3c-2Gl">
-                                    <rect key="frame" x="0.0" y="0.0" width="830" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="830" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGg-Xb-30d">
@@ -36,7 +36,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyC-oS-4Ty">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyC-oS-4Ty">
                                             <rect key="frame" x="617" y="35" width="213" height="49"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="213" id="CfZ-y6-bGX"/>
@@ -236,10 +236,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgE-86-eVP">
-                                <rect key="frame" x="220" y="362" width="150" height="150"/>
+                                <rect key="frame" x="125" y="380" width="245" height="150"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="BUR-R5-UL1"/>
+                                    <constraint firstAttribute="width" constant="245" id="BUR-R5-UL1"/>
                                     <constraint firstAttribute="height" constant="150" id="wdc-u3-4aQ"/>
                                 </constraints>
                                 <state key="normal" title="First time using app"/>
@@ -247,8 +247,8 @@
                                     <segue destination="13w-SL-yTL" kind="show" id="Ik8-t8-J5K"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Disco App" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6i-kd-emJ">
-                                <rect key="frame" x="303" y="105" width="419" height="58"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Welcome to the Disco App" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6i-kd-emJ">
+                                <rect key="frame" x="303" y="102" width="419" height="58"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="419" id="Fgn-8D-lJG"/>
@@ -258,12 +258,16 @@
                                 <color key="textColor" red="0.0" green="0.46412841431196128" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.54151637794470919" green="0.68107973947233169" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiscoIcon copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ve5-A6-4g0">
+                                <rect key="frame" x="389" y="172" width="248" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgb-MB-oDT">
-                                <rect key="frame" x="654" y="362" width="150" height="150"/>
+                                <rect key="frame" x="653" y="380" width="245" height="150"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="A8l-aD-G58"/>
-                                    <constraint firstAttribute="width" constant="150" id="wze-DK-GJy"/>
+                                    <constraint firstAttribute="width" constant="245" id="wze-DK-GJy"/>
                                 </constraints>
                                 <state key="normal" title="Continue with your discussions"/>
                                 <connections>
@@ -273,12 +277,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="m6i-kd-emJ" firstAttribute="top" secondItem="me8-xA-30f" secondAttribute="bottom" constant="41" id="508-Nv-pcu"/>
+                            <constraint firstItem="m6i-kd-emJ" firstAttribute="top" secondItem="me8-xA-30f" secondAttribute="bottom" constant="38" id="508-Nv-pcu"/>
                             <constraint firstItem="m6i-kd-emJ" firstAttribute="centerX" secondItem="et1-LU-5qj" secondAttribute="centerX" id="KOy-yD-eSI"/>
                             <constraint firstItem="HgE-86-eVP" firstAttribute="baseline" secondItem="cgb-MB-oDT" secondAttribute="baseline" id="RTS-0h-NkD"/>
-                            <constraint firstItem="HgE-86-eVP" firstAttribute="leading" secondItem="et1-LU-5qj" secondAttribute="leadingMargin" constant="200" id="RZO-8p-nBj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cgb-MB-oDT" secondAttribute="trailing" constant="200" id="ie9-Y7-qtE"/>
-                            <constraint firstItem="RE7-im-HK4" firstAttribute="top" secondItem="HgE-86-eVP" secondAttribute="bottom" constant="256" id="yjf-PU-01N"/>
+                            <constraint firstItem="HgE-86-eVP" firstAttribute="leading" secondItem="et1-LU-5qj" secondAttribute="leadingMargin" constant="105" id="RZO-8p-nBj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cgb-MB-oDT" secondAttribute="trailing" constant="106" id="ie9-Y7-qtE"/>
+                            <constraint firstItem="RE7-im-HK4" firstAttribute="top" secondItem="cgb-MB-oDT" secondAttribute="bottom" constant="238" id="unp-zo-mvd"/>
+                            <constraint firstItem="RE7-im-HK4" firstAttribute="top" secondItem="HgE-86-eVP" secondAttribute="bottom" constant="238" id="yjf-PU-01N"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kZx-8u-3de"/>
@@ -300,7 +305,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSM-wy-6D7" id="kJJ-CK-Ipb">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxR-ag-hbJ">
@@ -470,7 +475,10 @@
             <point key="canvasLocation" x="944.53124999999989" y="265.625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DiscoIcon copy.png" width="1024" height="1024"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ndC-vl-whv"/>
+        <segue reference="GZa-fy-PWh"/>
     </inferredMetricsTieBreakers>
 </document>
