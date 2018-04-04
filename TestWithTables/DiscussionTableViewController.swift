@@ -47,6 +47,7 @@ class DiscussionTableViewController: UITableViewController {
         let discussion = discussions[indexPath.row]
         
         cell.nameLabel.text = discussion.name
+        cell.periodLabel.text = discussion.period.name
         
         return cell
     }
