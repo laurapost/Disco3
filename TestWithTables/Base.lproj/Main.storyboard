@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17C88" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DLn-Ni-C46">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17D102" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DLn-Ni-C46">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -61,7 +61,7 @@
                                 <connections>
                                     <outlet property="nameLabel" destination="bGg-Xb-30d" id="Z1z-5v-Mkf"/>
                                     <outlet property="periodLabel" destination="QyC-oS-4Ty" id="74m-ma-94H"/>
-                                    <segue destination="mLa-qd-sNO" kind="show" identifier="" id="Nk7-Ry-bO5"/>
+                                    <segue destination="mLa-qd-sNO" kind="show" identifier="showCollection" id="Nk7-Ry-bO5"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
