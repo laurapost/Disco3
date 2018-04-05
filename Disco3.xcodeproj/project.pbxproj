@@ -26,6 +26,7 @@
 		CD66FB701FE49FDD0090D6A3 /* Discussion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD66FB6F1FE49FDD0090D6A3 /* Discussion.swift */; };
 		CD66FB721FE4A4FA0090D6A3 /* DiscussionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD66FB711FE4A4FA0090D6A3 /* DiscussionTableViewCell.swift */; };
 		CD66FB741FE4A6ED0090D6A3 /* DiscussionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD66FB731FE4A6ED0090D6A3 /* DiscussionTableViewController.swift */; };
+		CDBA731020765F73002E76E5 /* StudentIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA730F20765F73002E76E5 /* StudentIDViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		CD66FB6F1FE49FDD0090D6A3 /* Discussion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discussion.swift; sourceTree = "<group>"; };
 		CD66FB711FE4A4FA0090D6A3 /* DiscussionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussionTableViewCell.swift; sourceTree = "<group>"; };
 		CD66FB731FE4A6ED0090D6A3 /* DiscussionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussionTableViewController.swift; sourceTree = "<group>"; };
+		CDBA730F20765F73002E76E5 /* StudentIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentIDViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				CD4C436020616CEF00EA9EFB /* ClassTableViewCell.swift */,
 				CD4C43642062C3B900EA9EFB /* CreateClassViewController.swift */,
 				CD395EA8206732C0004B01A9 /* StudentTableViewCell.swift */,
+				CDBA730F20765F73002E76E5 /* StudentIDViewController.swift */,
 				CD66FB461FE46DD40090D6A3 /* Assets.xcassets */,
 				CD66FB481FE46DD40090D6A3 /* LaunchScreen.storyboard */,
 				CD66FB4B1FE46DD40090D6A3 /* Info.plist */,
@@ -300,6 +303,7 @@
 				CD4C43632061820B00EA9EFB /* Class.swift in Sources */,
 				CD4C435F20616B8D00EA9EFB /* ClassesTableViewController.swift in Sources */,
 				CD66FB701FE49FDD0090D6A3 /* Discussion.swift in Sources */,
+				CDBA731020765F73002E76E5 /* StudentIDViewController.swift in Sources */,
 				CD4C43652062C3B900EA9EFB /* CreateClassViewController.swift in Sources */,
 				CD66FB421FE46DD40090D6A3 /* ViewController.swift in Sources */,
 				190C5EB4200531F500154795 /* CollectionViewCell.swift in Sources */,

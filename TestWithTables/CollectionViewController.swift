@@ -44,5 +44,17 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.item)
     }
+    
+    //MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showStudent" {
+            if let itemIndex = collectionView.indexPathsForSelectedItems?.first?.item {
+                let destVC = segue.destination as! StudentIDViewController
+                destVC.navigationItem.title = students[itemIndex].studentName
+                destVC.showComment = students[itemIndex].comments
+                destVC.showPoint = String(students[itemIndex].points)
+            }
+    }
+    }
 
 }
