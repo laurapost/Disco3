@@ -22,6 +22,11 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
     var roster: Class?
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
+
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     
     override func viewDidLoad() {

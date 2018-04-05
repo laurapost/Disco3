@@ -227,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YQ3-ot-Y35" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3086" y="1019"/>
+            <point key="canvasLocation" x="3809.7656249999995" y="1018.75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2uZ-Rk-8IH">
@@ -346,7 +346,7 @@
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="o69-Si-Fh8">
                                 <connections>
-                                    <segue destination="74O-mw-pdE" kind="show" id="NTF-vl-Tno"/>
+                                    <segue destination="a6u-Ch-3W7" kind="presentation" identifier="addClass" id="NTF-vl-Tno"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Start a Discussion!" id="aeO-WL-0PC">
@@ -451,7 +451,11 @@
                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Class" id="5MW-zX-FlV">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nNv-UB-AnK"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nNv-UB-AnK">
+                            <connections>
+                                <action selector="cancel:" destination="74O-mw-pdE" id="Qhi-3t-Df5"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="f58-uC-62O">
                             <connections>
                                 <segue destination="oTq-9x-4Cg" kind="unwind" unwindAction="unwindToClassListWithSender:" id="4ig-ZI-Bhu"/>
@@ -468,7 +472,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJr-16-lF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="oTq-9x-4Cg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2360.7421875" y="1018.75"/>
+            <point key="canvasLocation" x="3084.9609375" y="1018.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jt6-zg-LZP">
@@ -487,6 +491,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuU-4u-WVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.53124999999989" y="265.625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nPU-8H-B6X">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a6u-Ch-3W7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mfA-hV-HlB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="74O-mw-pdE" kind="relationship" relationship="rootViewController" id="DsO-ai-Vv9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Py-oO-9KP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2360.7421875" y="1018.75"/>
         </scene>
     </scenes>
     <resources>
