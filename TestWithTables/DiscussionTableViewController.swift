@@ -94,6 +94,7 @@ class DiscussionTableViewController: UITableViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let destVC = segue.destination as! CollectionViewController
                 destVC.navigationItem.title = discussions[indexPath.row].name
+                destVC.students = discussions[indexPath.row].period.students
             }
         }
         }
