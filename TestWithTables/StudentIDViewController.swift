@@ -11,6 +11,7 @@ import UIKit
 class StudentIDViewController: UIViewController, UITextViewDelegate {
     
     //MARK: Properties
+    var student = Student(name: "", number: 0, teacherComments: "")
     
     var showPoint: String?
     var showComment: String?
@@ -23,8 +24,8 @@ class StudentIDViewController: UIViewController, UITextViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        points.text = showPoint
-        comments.text = showComment
+        points.text = String(student.points)
+        comments.text = student.comments
     }
     
     override func viewDidLoad() {
@@ -41,7 +42,7 @@ class StudentIDViewController: UIViewController, UITextViewDelegate {
     
     //MARK: TextView func
     func textViewDidEndEditing(_ textView: UITextView) {
-        
+        student.comments = textView.text
     }
     
 

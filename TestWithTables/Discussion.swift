@@ -13,11 +13,13 @@ class Discussion {
    
     //MARK: Properties
     var name: String
-    var period: Class
+    var className: String
+    var students: [Student]
     
     //MARK: Initialize stored properties
-    init(name: String, period: Class) {
+    init(name: String, className: String, students: [Student]) {
         self.name = name
-        self.period = period
+        self.className = className
+        self.students = students
     }
 }

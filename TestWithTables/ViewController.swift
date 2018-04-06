@@ -17,6 +17,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
     @IBOutlet weak var pickerView: UIPickerView!
     var discussion: Discussion?
     var periods: [Class] = classes
+    var students: [Student] = []
+
     
     //MARK: Pickerview functions
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -29,7 +31,13 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
         return periods.count
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        discussion = Discussion(name: nameTextField.text!, period: periods[row])
+        let studentNames: [String]
+        studentNames = periods[row].studentNames
+        for student in studentNames {
+            let newStudent = Student(name: student, number: 0, teacherComments: "")
+            students.append(newStudent)
+        }
+        discussion = Discussion(name: nameTextField.text!, className: periods[row].name, students: students)
     }
     
     //MARK: UITextFieldDelegate
@@ -38,12 +46,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
         textField.resignFirstResponder()
         return true
     }
-
     func textFieldDidEndEditing(_ textField: UITextField) {
         updateSaveButtonState()
         navigationItem.title = textField.text
     }
-    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         //Disable the Save button while editing
         saveButton.isEnabled = false

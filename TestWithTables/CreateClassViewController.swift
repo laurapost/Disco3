@@ -17,7 +17,7 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var addStudentTextField: UITextField!
     @IBOutlet weak var rosterNameTextField: UITextField!
     
-    var students = [Student]()
+    var studentNames = [String]()
     
     var roster: Class?
     
@@ -42,9 +42,9 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
     }
     
     func insertNewStudent() {
-        let newStudent = Student(name: addStudentTextField.text!, number: 0, teacherComments: "")
-        students.append(newStudent)
-        let indexPath = IndexPath(row: students.count - 1, section: 0)
+        let newStudent = addStudentTextField.text
+        studentNames.append(newStudent!)
+        let indexPath = IndexPath(row: studentNames.count - 1, section: 0)
         tableView.beginUpdates()
         tableView.insertRows(at: [indexPath], with: .automatic)
         tableView.endUpdates()
@@ -83,22 +83,22 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
             return
         }
         let name = rosterNameTextField.text ?? ""
-        let arr: [Student] = students
-        roster = Class(name: name, students: arr)
+        let arr: [String] = studentNames
+        roster = Class(name: name, studentNames: arr)
     }
 }
 
 extension CreateClassViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return students.count
+        return studentNames.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let student = students[indexPath.row]
+        let student = studentNames[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "studentCell") as? StudentTableViewCell
-        cell?.studentName.text = student.studentName
+        cell?.studentName.text = student
         return cell!
         
     }

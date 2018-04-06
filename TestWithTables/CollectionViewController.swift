@@ -51,8 +51,9 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
             if let itemIndex = collectionView.indexPathsForSelectedItems?.first?.item {
                 let destVC = segue.destination as! StudentIDViewController
                 destVC.navigationItem.title = students[itemIndex].studentName
-                destVC.showComment = students[itemIndex].comments
-                destVC.showPoint = String(students[itemIndex].points)
+                destVC.student = students[itemIndex]
+                //destVC.showComment = students[itemIndex].comments
+                //destVC.showPoint = String(students[itemIndex].points)
             }
     }
     }

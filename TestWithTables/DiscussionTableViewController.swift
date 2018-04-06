@@ -47,7 +47,7 @@ class DiscussionTableViewController: UITableViewController {
         let discussion = discussions[indexPath.row]
         
         cell.nameLabel.text = discussion.name
-        cell.periodLabel.text = discussion.period.name
+        cell.periodLabel.text = discussion.className
         
         return cell
     }
@@ -94,7 +94,7 @@ class DiscussionTableViewController: UITableViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let destVC = segue.destination as! CollectionViewController
                 destVC.navigationItem.title = discussions[indexPath.row].name
-                destVC.students = discussions[indexPath.row].period.students
+                destVC.students = discussions[indexPath.row].students
             }
         }
         }

@@ -13,12 +13,12 @@ class Class {
     
     //MARK: Properties
     var name: String
-    var students: Array<Student>
+    var studentNames: Array<String>
     
     //Initializer
-    init (name: String, students: Array<Student>) {
+    init (name: String, studentNames: Array<String>) {
         self.name = name
-        self.students = students
+        self.studentNames = studentNames
     }
     
 }
