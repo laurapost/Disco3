@@ -39,9 +39,12 @@ class StudentIDViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        comments.delegate = self
+        
         points.text = String(student.points)
         comments.delegate = self
         stepperVar.value = Double(student.points)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,10 +54,18 @@ class StudentIDViewController: UIViewController, UITextViewDelegate {
     
     
     //MARK: TextView func
+    
     func textViewDidEndEditing(_ textView: UITextView) {
         student.comments = textView.text
     }
-    
+   
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            comments.resignFirstResponder()
+            return false
+        }
+        return true
+    }
 
     /*
     // MARK: - Navigation
