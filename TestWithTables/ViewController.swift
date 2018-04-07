@@ -18,7 +18,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
     var discussion: Discussion?
     var periods: [Class] = classes
     var students: [Student] = []
-
+    var selectedPeriod: Class!
     
     //MARK: Pickerview functions
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -31,13 +31,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
         return periods.count
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let studentNames: [String]
-        studentNames = periods[row].studentNames
-        for student in studentNames {
-            let newStudent = Student(name: student, number: 0, teacherComments: "")
-            students.append(newStudent)
+        if periods.count > 0 {
+        selectedPeriod = periods[row]
         }
-        discussion = Discussion(name: nameTextField.text!, className: periods[row].name, students: students)
     }
     
     //MARK: UITextFieldDelegate
@@ -80,7 +76,17 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
             os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
             return
         }
-        discussion?.name = nameTextField.text!
+        let studentNames: [String]
+        if selectedPeriod == nil {
+            selectedPeriod = periods[0]
+        }
+         studentNames = selectedPeriod.studentNames
+         for student in studentNames {
+         let newStudent = Student(name: student, number: 0, teacherComments: "")
+         students.append(newStudent)
+         }
+         discussion = Discussion(name: nameTextField.text!, className: selectedPeriod.name, students: students)
+
     }
     
     //MARK: Actions
@@ -103,8 +109,12 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
     private func updateSaveButtonState() {
         //Disable the Save button is the text field is empty
         let text = nameTextField.text ?? ""
-        saveButton.isEnabled = !text.isEmpty
+        if !text.isEmpty && periods.count > 0 {
+        saveButton.isEnabled = true
     }
-    
+        else {
+        saveButton.isEnabled = false
+            
+        }
 }
-
+}

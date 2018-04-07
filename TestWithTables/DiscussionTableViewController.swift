@@ -9,10 +9,11 @@
 import UIKit
 import os.log
 
+var discussions = [Discussion]()
+
 class DiscussionTableViewController: UITableViewController {
     
     //MARK: Properties
-    var discussions = [Discussion]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
