@@ -20,6 +20,14 @@ class StudentIDViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var comments: UITextView!
     
+    
+    @IBOutlet weak var stepperVar: UIStepper!
+    
+    @IBAction func stepper(_ sender: UIStepper) {
+        points.text = String(Int(sender.value))
+        student.points = Int(points.text!)!
+    }
+    
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -31,7 +39,9 @@ class StudentIDViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        points.text = String(student.points)
         comments.delegate = self
+        stepperVar.value = Double(student.points)
     }
 
     override func didReceiveMemoryWarning() {
