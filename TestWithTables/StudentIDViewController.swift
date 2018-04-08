@@ -58,15 +58,7 @@ class StudentIDViewController: UIViewController, UITextViewDelegate {
     func textViewDidEndEditing(_ textView: UITextView) {
         student.comments = textView.text
     }
-   
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if text == "\n" {
-            comments.resignFirstResponder()
-            return false
-        }
-        return true
-    }
-
+    
     /*
     // MARK: - Navigation
 

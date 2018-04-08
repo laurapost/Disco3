@@ -54,11 +54,6 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
     }
     
     //MARK: UITextFieldDelegate
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        //Hide the keyboard
-        textField.resignFirstResponder()
-        return true
-    }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         //Disable the save button while editing.
         saveButton.isEnabled = false

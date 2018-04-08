@@ -37,11 +37,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
     }
     
     //MARK: UITextFieldDelegate
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        //Hide the keyboard
-        textField.resignFirstResponder()
-        return true
-    }
     func textFieldDidEndEditing(_ textField: UITextField) {
         updateSaveButtonState()
         navigationItem.title = textField.text
