@@ -77,7 +77,7 @@
                             </barButtonItem>
                             <barButtonItem title="View Your Classes" id="dwE-SU-hfq">
                                 <connections>
-                                    <segue destination="13w-SL-yTL" kind="show" id="Uvg-sR-Gyq"/>
+                                    <segue destination="13w-SL-yTL" kind="show" identifier="viewClasses" id="Uvg-sR-Gyq"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -401,15 +401,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="classCell" rowHeight="120" id="KSM-wy-6D7" customClass="ClassTableViewCell" customModule="Disco3" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="classCell" rowHeight="120" id="KSM-wy-6D7" customClass="ClassTableViewCell" customModule="Disco3" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="1024" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSM-wy-6D7" id="kJJ-CK-Ipb">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="119.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="796" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxR-ag-hbJ">
-                                            <rect key="frame" x="8" y="25" width="1008" height="68"/>
+                                            <rect key="frame" x="8" y="25" width="941" height="68"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                             <color key="textColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -440,9 +440,9 @@
                                     <segue destination="a6u-Ch-3W7" kind="presentation" identifier="addClass" id="NTF-vl-Tno"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Start a Discussion!" id="aeO-WL-0PC">
+                            <barButtonItem title="Start a Discussion" id="aeO-WL-0PC">
                                 <connections>
-                                    <segue destination="X8Q-hX-Miw" kind="show" id="ndC-vl-whv"/>
+                                    <segue destination="X8Q-hX-Miw" kind="show" identifier="viewDiscussion" id="ndC-vl-whv"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -629,8 +629,8 @@
         <image name="DiscoIcon copy.png" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ndC-vl-whv"/>
         <segue reference="Ik8-t8-J5K"/>
         <segue reference="qM2-j4-Hmc"/>
+        <segue reference="ndC-vl-whv"/>
     </inferredMetricsTieBreakers>
 </document>

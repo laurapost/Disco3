@@ -76,10 +76,13 @@ class ClassesTableViewController: UITableViewController {
         super.prepare(for: segue, sender: sender)
         
         switch(segue.identifier ?? "") {
+            
+        case "viewDiscussion" :
+            os_log("Viewing discussions", log: OSLog.default, type: .debug)
         
         case "addClass" :
             os_log("Adding a new class.", log: OSLog.default, type: .debug)
-        
+            
         case "showEdit" :
             guard let EditClassViewController = segue.destination as? CreateClassViewController else {
                 fatalError("Unexpected destination")
@@ -96,6 +99,7 @@ class ClassesTableViewController: UITableViewController {
             default:
             fatalError("Unexpected Segue indentifier")
         }
+
     }
 
 
