@@ -424,6 +424,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="className" destination="gxR-ag-hbJ" id="rQG-jZ-vC5"/>
+                                    <segue destination="74O-mw-pdE" kind="show" identifier="showEdit" id="qM2-j4-Hmc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -621,14 +622,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Py-oO-9KP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2360.7421875" y="1018.75"/>
+            <point key="canvasLocation" x="2361" y="1650"/>
         </scene>
     </scenes>
     <resources>
         <image name="DiscoIcon copy.png" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GZa-fy-PWh"/>
+        <segue reference="ndC-vl-whv"/>
         <segue reference="Ik8-t8-J5K"/>
+        <segue reference="qM2-j4-Hmc"/>
     </inferredMetricsTieBreakers>
 </document>

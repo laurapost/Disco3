@@ -337,7 +337,7 @@ public class IQKeyboardManager: NSObject, UIGestureRecognizerDelegate {
                 //If it refuses to resign then becoming it first responder again for getting notifications callback.
                 textFieldRetain.becomeFirstResponder()
                 
-                showLog("Refuses to resign first responder: \(_textFieldView?._IQDescription())")
+                showLog("Refuses to resign first responder: \(String(describing: _textFieldView?._IQDescription()))")
             }
             
             return isResignFirstResponder
@@ -826,7 +826,7 @@ public class IQKeyboardManager: NSObject, UIGestureRecognizerDelegate {
                 
                 //  Setting it's new frame
                 unwrappedController.view.frame = newFrame
-                self.showLog("Set \(controller?._IQDescription()) frame to : \(newFrame)")
+                self.showLog("Set \(String(describing: controller?._IQDescription())) frame to : \(newFrame)")
                 
                 //Animating content if needed (Bug ID: #204)
                 if self.layoutIfNeededOnUpdate == true {

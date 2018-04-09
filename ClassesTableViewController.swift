@@ -70,15 +70,51 @@ class ClassesTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
     }
+    
+    //MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        switch(segue.identifier ?? "") {
+        
+        case "addClass" :
+            os_log("Adding a new class.", log: OSLog.default, type: .debug)
+        
+        case "showEdit" :
+            guard let EditClassViewController = segue.destination as? CreateClassViewController else {
+                fatalError("Unexpected destination")
+            }
+            guard let selectedClassCell = sender as? ClassTableViewCell else {
+                fatalError("Unexpected destination")
+            }
+            guard let indexPath = tableView.indexPath(for: selectedClassCell) else {
+                fatalError("The selected cell is not being displayed on the table")
+            }
+            let selectedClass = classes[indexPath.row]
+            EditClassViewController.roster = selectedClass
+            
+            default:
+            fatalError("Unexpected Segue indentifier")
+        }
+    }
 
 
     //MARK: Actions
     @IBAction func unwindToClassList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? CreateClassViewController, let roster = sourceViewController.roster {
+            
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                //update a selected class
+                classes[selectedIndexPath.row] = roster
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+            }
+            else {
+            
             // Add a new class
             let newIndexPath = IndexPath(row: classes.count, section: 0)
             classes.append(roster)
             tableView.insertRows(at: [newIndexPath], with: .automatic)
+            }
         }
     }
 }

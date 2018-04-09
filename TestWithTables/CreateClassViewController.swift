@@ -35,6 +35,13 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
         rosterNameTextField.delegate = self
         tableView.tableFooterView = UIView(frame: CGRect.zero)
         updateSaveButtonState()
+        
+        //Set up views if editing
+        if let roster = roster {
+            navigationItem.title = roster.name
+            rosterNameTextField.text = roster.name
+            studentNames = roster.studentNames
+        }
     }
 
     @IBAction func addStudent(_ sender: Any) {
