@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import TestWithTables
+@testable import Disco3
 
 class TestWithTablesTests: XCTestCase {
     
