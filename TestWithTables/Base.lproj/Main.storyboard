@@ -100,7 +100,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yhf-8v-fZ5">
-                                <rect key="frame" x="20" y="40" width="984" height="30"/>
+                                <rect key="frame" x="20" y="84" width="984" height="30"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Discussion Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O8y-67-0QA">
                                         <rect key="frame" x="0.0" y="0.0" width="984" height="30"/>
@@ -115,7 +115,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a Class Period" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LN7-Me-W4D">
-                                <rect key="frame" x="20" y="150" width="452" height="20"/>
+                                <rect key="frame" x="0.0" y="150" width="1024" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -161,7 +161,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="0Ah-PZ-fLo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3543" y="265"/>
+            <point key="canvasLocation" x="3542.5781249999995" y="264.84375"/>
         </scene>
         <!--Name of Discussion-->
         <scene sceneID="a2I-KH-8d9">
@@ -176,7 +176,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t4V-cj-h6l">
-                                <rect key="frame" x="25" y="40" width="974" height="728"/>
+                                <rect key="frame" x="25" y="84" width="974" height="684"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0DL-KF-rG4">
                                     <size key="itemSize" width="175" height="175"/>
@@ -253,7 +253,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMQ-Nz-Vxs">
-                                <rect key="frame" x="20" y="452" width="247" height="92"/>
+                                <rect key="frame" x="20" y="496" width="247" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="247" id="g2B-7k-AJr"/>
                                 </constraints>
@@ -315,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="217-A1-O3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3977" y="2304"/>
+            <point key="canvasLocation" x="3955" y="2170"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2uZ-Rk-8IH">
@@ -465,7 +465,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="034-vX-Mnu">
-                                <rect key="frame" x="20" y="225" width="984" height="523"/>
+                                <rect key="frame" x="20" y="244" width="984" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="studentCell" rowHeight="69" id="vSy-4X-ljO" customClass="StudentTableViewCell" customModule="Disco3" customModuleProvider="target">
@@ -502,7 +502,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the Name of the Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lez-LZ-86T">
-                                <rect key="frame" x="20" y="28" width="984" height="84"/>
+                                <rect key="frame" x="20" y="72" width="984" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -559,7 +559,7 @@
                             <constraint firstItem="ZaU-Bn-QTC" firstAttribute="leading" secondItem="FjO-7F-VeG" secondAttribute="leading" id="c8f-tY-q69"/>
                             <constraint firstItem="TGh-NU-Jjv" firstAttribute="top" secondItem="lez-LZ-86T" secondAttribute="bottom" constant="46" id="hWz-VT-UGp"/>
                             <constraint firstItem="TGh-NU-Jjv" firstAttribute="leading" secondItem="ZaU-Bn-QTC" secondAttribute="leading" id="hZ0-oO-iZv"/>
-                            <constraint firstItem="034-vX-Mnu" firstAttribute="top" secondItem="FjO-7F-VeG" secondAttribute="bottom" constant="-11" id="sCI-Jk-pYD"/>
+                            <constraint firstItem="034-vX-Mnu" firstAttribute="top" secondItem="FjO-7F-VeG" secondAttribute="bottom" constant="8" id="sCI-Jk-pYD"/>
                             <constraint firstItem="ZaU-Bn-QTC" firstAttribute="top" secondItem="N0X-Cj-TFr" secondAttribute="top" constant="120" id="ugC-A8-XHb"/>
                             <constraint firstItem="lez-LZ-86T" firstAttribute="trailing" secondItem="ZaU-Bn-QTC" secondAttribute="trailing" id="zoL-tV-VbT"/>
                         </constraints>
@@ -586,7 +586,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJr-16-lF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="oTq-9x-4Cg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2583" y="1194"/>
+            <point key="canvasLocation" x="2582.8125" y="1193.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jt6-zg-LZP">
@@ -627,7 +627,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="qM2-j4-Hmc"/>
-        <segue reference="Uvg-sR-Gyq"/>
+        <segue reference="Ik8-t8-J5K"/>
         <segue reference="ndC-vl-whv"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-class Class {
+class Class: Codable {
     
     //MARK: Properties
     var name: String

@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-class Discussion {
+class Discussion: Codable {
    
     //MARK: Properties
     var name: String
@@ -22,4 +22,7 @@ class Discussion {
         self.className = className
         self.students = students
     }
+
+    
+    
 }

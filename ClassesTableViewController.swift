@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-    var classes = [Class]()
+    var classes = ParentClass()
 
 class ClassesTableViewController: UITableViewController {
 
@@ -20,6 +20,7 @@ class ClassesTableViewController: UITableViewController {
         
         //Use the edit button item provided by table view controller
         navigationItem.leftBarButtonItem = editButtonItem
+        classes.restore(fileName: "SavedName")
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +35,7 @@ class ClassesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return classes.count
+        return classes.classes.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -45,7 +46,7 @@ class ClassesTableViewController: UITableViewController {
             fatalError("The dequed cell is not an instance of ClassTableViewCell")
         }
         //Fetched the appropriate class object for the data sourcec layout (had to use roster instead of class, but it is a class object)
-        let roster = classes[indexPath.row]
+        let roster = classes.classes[indexPath.row]
         
         cell.className.text = roster.name
 
@@ -64,8 +65,9 @@ class ClassesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            classes.remove(at: indexPath.row)
+            classes.classes.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            classes.archive(fileName: "SavedName")
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
@@ -93,7 +95,7 @@ class ClassesTableViewController: UITableViewController {
             guard let indexPath = tableView.indexPath(for: selectedClassCell) else {
                 fatalError("The selected cell is not being displayed on the table")
             }
-            let selectedClass = classes[indexPath.row]
+            let selectedClass = classes.classes[indexPath.row]
             EditClassViewController.roster = selectedClass
             
             default:
@@ -109,15 +111,17 @@ class ClassesTableViewController: UITableViewController {
             
             if let selectedIndexPath = tableView.indexPathForSelectedRow {
                 //update a selected class
-                classes[selectedIndexPath.row] = roster
+                classes.classes[selectedIndexPath.row] = roster
                 tableView.reloadRows(at: [selectedIndexPath], with: .none)
+                classes.archive(fileName: "SavedName")
             }
             else {
             
             // Add a new class
-            let newIndexPath = IndexPath(row: classes.count, section: 0)
-            classes.append(roster)
+            let newIndexPath = IndexPath(row: classes.classes.count, section: 0)
+            classes.classes.append(roster)
             tableView.insertRows(at: [newIndexPath], with: .automatic)
+            classes.archive(fileName: "SavedName")
             }
         }
     }

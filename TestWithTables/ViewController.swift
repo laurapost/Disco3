@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var pickerView: UIPickerView!
     var discussion: Discussion?
-    var periods: [Class] = classes
+    var periods: [Class] = classes.classes
     var students: [Student] = []
     var selectedPeriod: Class!
     
@@ -81,7 +81,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
          students.append(newStudent)
          }
          discussion = Discussion(name: nameTextField.text!, className: selectedPeriod.name, students: students)
-
     }
     
     //MARK: Actions

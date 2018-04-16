@@ -26,6 +26,7 @@ class StudentIDViewController: UIViewController, UITextViewDelegate {
     @IBAction func stepper(_ sender: UIStepper) {
         points.text = String(Int(sender.value))
         student.points = Int(points.text!)!
+        discussions.archive(fileName: "SavedName")
     }
     
 
@@ -57,6 +58,7 @@ class StudentIDViewController: UIViewController, UITextViewDelegate {
     
     func textViewDidEndEditing(_ textView: UITextView) {
         student.comments = textView.text
+        discussions.archive(fileName: "SavedName")
     }
     
     /*

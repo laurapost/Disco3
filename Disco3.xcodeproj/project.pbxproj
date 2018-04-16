@@ -28,6 +28,8 @@
 		AE8C3216207DC49C00E41283 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8C3205207DC49C00E41283 /* IQNSArray+Sort.swift */; };
 		AE8C3218207E657800E41283 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8C3217207E657800E41283 /* 1024.png */; };
 		CD2F3B142059F1C60001B787 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F3B132059F1C60001B787 /* Student.swift */; };
+		CD333CDA20850BCA00666C1A /* DiscussionArr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD333CD920850BCA00666C1A /* DiscussionArr.swift */; };
+		CD333CDC2085136600666C1A /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD333CDB2085136600666C1A /* ParentClass.swift */; };
 		CD395EA9206732C0004B01A9 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD395EA8206732C0004B01A9 /* StudentTableViewCell.swift */; };
 		CD4C435F20616B8D00EA9EFB /* ClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C435E20616B8D00EA9EFB /* ClassesTableViewController.swift */; };
 		CD4C436120616CEF00EA9EFB /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C436020616CEF00EA9EFB /* ClassTableViewCell.swift */; };
@@ -86,6 +88,8 @@
 		AE8C3205207DC49C00E41283 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 		AE8C3217207E657800E41283 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
 		CD2F3B132059F1C60001B787 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		CD333CD920850BCA00666C1A /* DiscussionArr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionArr.swift; sourceTree = "<group>"; };
+		CD333CDB2085136600666C1A /* ParentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentClass.swift; sourceTree = "<group>"; };
 		CD395EA8206732C0004B01A9 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		CD4C435E20616B8D00EA9EFB /* ClassesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassesTableViewController.swift; path = ../ClassesTableViewController.swift; sourceTree = "<group>"; };
 		CD4C436020616CEF00EA9EFB /* ClassTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
@@ -223,18 +227,20 @@
 		CD66FB3E1FE46DD40090D6A3 /* Disco3 */ = {
 			isa = PBXGroup;
 			children = (
+				AE8C31EE207DC49C00E41283 /* IQKeyboardManagerSwift */,
 				AE8C3217207E657800E41283 /* 1024.png */,
 				CD66FB3F1FE46DD40090D6A3 /* AppDelegate.swift */,
 				CD66FB411FE46DD40090D6A3 /* ViewController.swift */,
 				CD2F3B132059F1C60001B787 /* Student.swift */,
 				CD66FB731FE4A6ED0090D6A3 /* DiscussionTableViewController.swift */,
-				AE8C31EE207DC49C00E41283 /* IQKeyboardManagerSwift */,
 				CD66FB711FE4A4FA0090D6A3 /* DiscussionTableViewCell.swift */,
 				CD66FB6F1FE49FDD0090D6A3 /* Discussion.swift */,
+				CD333CD920850BCA00666C1A /* DiscussionArr.swift */,
 				CD66FB431FE46DD40090D6A3 /* Main.storyboard */,
 				190C5EB52005339100154795 /* CollectionViewController.swift */,
 				190C5EB3200531F500154795 /* CollectionViewCell.swift */,
 				CD4C43622061820B00EA9EFB /* Class.swift */,
+				CD333CDB2085136600666C1A /* ParentClass.swift */,
 				CD4C435E20616B8D00EA9EFB /* ClassesTableViewController.swift */,
 				CD4C436020616CEF00EA9EFB /* ClassTableViewCell.swift */,
 				CD4C43642062C3B900EA9EFB /* CreateClassViewController.swift */,
@@ -418,11 +424,13 @@
 				AE8C320C207DC49C00E41283 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				AE8C320F207DC49C00E41283 /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				AE8C3212207DC49C00E41283 /* IQUIScrollView+Additions.swift in Sources */,
+				CD333CDC2085136600666C1A /* ParentClass.swift in Sources */,
 				AE8C3213207DC49C00E41283 /* IQUIViewController+Additions.swift in Sources */,
 				CD66FB421FE46DD40090D6A3 /* ViewController.swift in Sources */,
 				190C5EB4200531F500154795 /* CollectionViewCell.swift in Sources */,
 				CD66FB401FE46DD40090D6A3 /* AppDelegate.swift in Sources */,
 				AE8C3215207DC49C00E41283 /* IQUIView+Hierarchy.swift in Sources */,
+				CD333CDA20850BCA00666C1A /* DiscussionArr.swift in Sources */,
 				AE8C320D207DC49C00E41283 /* IQKeyboardManagerConstants.swift in Sources */,
 				AE8C3211207DC49C00E41283 /* IQUIWindow+Hierarchy.swift in Sources */,
 				190C5EB62005339100154795 /* CollectionViewController.swift in Sources */,
@@ -494,6 +502,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -553,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
