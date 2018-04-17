@@ -130,6 +130,7 @@ extension CreateClassViewController: UITableViewDelegate, UITableViewDataSource 
         let deleteHandler: (UITableViewRowAction, IndexPath) -> Void = { _, indexPath in
             self.studentNames.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            self.studentsCountLabel.text = "(There are " + String(self.studentNames.count) + " students entered)"
             classes.archive(fileName: "SavedName")
         }
         let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.destructive, title: "Delete", handler: deleteHandler)
