@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-    var classes = ParentClass()
+    var classes = ParentArr()
 
 class ClassesTableViewController: UITableViewController {
 

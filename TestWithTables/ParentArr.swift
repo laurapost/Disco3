@@ -9,13 +9,15 @@
 import Foundation
 import os.log
 
-class DiscussionArr: Codable {
+class ParentArr: Codable {
     
     //MARK: Properties
     var discussions: [Discussion]
+    var classes: [Class]
     
     init () {
         self.discussions = [Discussion]()
+        self.classes = [Class]()
     }
     
     /**
@@ -49,10 +51,11 @@ class DiscussionArr: Codable {
         let archiveURL = documentsDirectory.appendingPathComponent(fileName)
         if let recoveredDataCoded = NSKeyedUnarchiver.unarchiveObject(withFile: archiveURL.path) as? Data {
             do {
-                let recoveredData = try PropertyListDecoder().decode(DiscussionArr.self, from: recoveredDataCoded)
+                let recoveredData = try PropertyListDecoder().decode(ParentArr.self, from: recoveredDataCoded)
                 os_log("Data successfully recovered from file.", log: OSLog.default, type: .debug)
                 
                 discussions = recoveredData.discussions
+                classes = recoveredData.classes
                 
             } catch {
                 os_log("Failed to recover data", log: OSLog.default, type: .error)

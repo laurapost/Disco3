@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-var discussions = DiscussionArr()
+var discussions = ParentArr()
 
 class DiscussionTableViewController: UITableViewController {
     
