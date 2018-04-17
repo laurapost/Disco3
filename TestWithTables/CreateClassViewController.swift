@@ -22,6 +22,9 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
     var roster: Class?
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
+    
+    @IBOutlet weak var studentsCountLabel: UILabel!
+    
 
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         // Depending on style of presentation (modal or push presentation), this view controller needs to be dismissed in two different ways.
@@ -52,11 +55,13 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
             rosterNameTextField.text = roster.name
             studentNames = roster.studentNames
         }
+        studentsCountLabel.text = "(There are " + String(studentNames.count) + " students entered)"
     }
 
     @IBAction func addStudent(_ sender: Any) {
         insertNewStudent()
         classes.archive(fileName: "SavedName")
+        studentsCountLabel.text = "(There are " + String(studentNames.count) + " students entered)"
     }
     
     func insertNewStudent() {

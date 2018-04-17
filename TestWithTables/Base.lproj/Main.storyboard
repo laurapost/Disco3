@@ -85,7 +85,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6J-Ru-rCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2360.7421875" y="265.625"/>
+            <point key="canvasLocation" x="2041" y="265"/>
         </scene>
         <!--New Discussion-->
         <scene sceneID="tne-QT-ifu">
@@ -161,7 +161,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="0Ah-PZ-fLo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3542.5781249999995" y="264.84375"/>
+            <point key="canvasLocation" x="2773" y="265"/>
         </scene>
         <!--Name of Discussion-->
         <scene sceneID="a2I-KH-8d9">
@@ -232,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YQ3-ot-Y35" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3977" y="1169"/>
+            <point key="canvasLocation" x="2773" y="1098"/>
         </scene>
         <!--StudentID View Controller-->
         <scene sceneID="Psk-sm-LUo">
@@ -315,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="217-A1-O3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3955" y="2170"/>
+            <point key="canvasLocation" x="2773" y="1898"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2uZ-Rk-8IH">
@@ -450,7 +450,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJl-1K-f9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1189" y="1292"/>
+            <point key="canvasLocation" x="1250" y="1098"/>
         </scene>
         <!--New Class-->
         <scene sceneID="izN-We-Cfd">
@@ -508,8 +508,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Student Names" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGh-NU-Jjv">
-                                <rect key="frame" x="20" y="158" width="984" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Student Names" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGh-NU-Jjv">
+                                <rect key="frame" x="20" y="158" width="165" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -539,10 +540,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(There are 0 students entered)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkU-lz-TWc">
+                                <rect key="frame" x="193" y="163" width="811" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TGh-NU-Jjv" firstAttribute="trailing" secondItem="ZaU-Bn-QTC" secondAttribute="trailing" id="0nD-Ln-JHD"/>
                             <constraint firstItem="ZaU-Bn-QTC" firstAttribute="leading" secondItem="N0X-Cj-TFr" secondAttribute="leadingMargin" id="9nl-Yu-wrH"/>
                             <constraint firstItem="ZaU-Bn-QTC" firstAttribute="leading" secondItem="034-vX-Mnu" secondAttribute="leading" id="DWd-Tw-tWw"/>
                             <constraint firstItem="ZaU-Bn-QTC" firstAttribute="trailing" secondItem="034-vX-Mnu" secondAttribute="trailing" id="EQ7-qy-Okf"/>
@@ -553,12 +560,9 @@
                             <constraint firstItem="FjO-7F-VeG" firstAttribute="top" secondItem="Kil-Uj-LVw" secondAttribute="top" id="SWO-Pw-G5y"/>
                             <constraint firstItem="lez-LZ-86T" firstAttribute="leading" secondItem="ZaU-Bn-QTC" secondAttribute="leading" id="UDN-8Z-BGg"/>
                             <constraint firstItem="Kil-Uj-LVw" firstAttribute="leading" secondItem="FjO-7F-VeG" secondAttribute="trailing" constant="8" symbolic="YES" id="WVA-RV-48Y"/>
-                            <constraint firstItem="FjO-7F-VeG" firstAttribute="top" secondItem="TGh-NU-Jjv" secondAttribute="bottom" constant="8" symbolic="YES" id="WWH-79-v7u"/>
                             <constraint firstItem="ZaU-Bn-QTC" firstAttribute="trailing" secondItem="Kil-Uj-LVw" secondAttribute="trailing" id="Wc6-sv-95I"/>
                             <constraint firstItem="ZaU-Bn-QTC" firstAttribute="top" secondItem="lez-LZ-86T" secondAttribute="bottom" constant="8" symbolic="YES" id="Y9l-wx-opo"/>
                             <constraint firstItem="ZaU-Bn-QTC" firstAttribute="leading" secondItem="FjO-7F-VeG" secondAttribute="leading" id="c8f-tY-q69"/>
-                            <constraint firstItem="TGh-NU-Jjv" firstAttribute="top" secondItem="lez-LZ-86T" secondAttribute="bottom" constant="46" id="hWz-VT-UGp"/>
-                            <constraint firstItem="TGh-NU-Jjv" firstAttribute="leading" secondItem="ZaU-Bn-QTC" secondAttribute="leading" id="hZ0-oO-iZv"/>
                             <constraint firstItem="034-vX-Mnu" firstAttribute="top" secondItem="FjO-7F-VeG" secondAttribute="bottom" constant="8" id="sCI-Jk-pYD"/>
                             <constraint firstItem="ZaU-Bn-QTC" firstAttribute="top" secondItem="N0X-Cj-TFr" secondAttribute="top" constant="120" id="ugC-A8-XHb"/>
                             <constraint firstItem="lez-LZ-86T" firstAttribute="trailing" secondItem="ZaU-Bn-QTC" secondAttribute="trailing" id="zoL-tV-VbT"/>
@@ -580,13 +584,14 @@
                         <outlet property="addStudentTextField" destination="FjO-7F-VeG" id="GyV-dq-fhf"/>
                         <outlet property="rosterNameTextField" destination="ZaU-Bn-QTC" id="yDQ-2D-XCI"/>
                         <outlet property="saveButton" destination="f58-uC-62O" id="YfD-XX-68N"/>
+                        <outlet property="studentsCountLabel" destination="mkU-lz-TWc" id="okL-tV-JIn"/>
                         <outlet property="tableView" destination="034-vX-Mnu" id="6kT-Gv-al1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJr-16-lF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="oTq-9x-4Cg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2582.8125" y="1193.75"/>
+            <point key="canvasLocation" x="2040.8203124999998" y="1097.65625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jt6-zg-LZP">
@@ -604,7 +609,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuU-4u-WVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="81" y="265"/>
+            <point key="canvasLocation" x="526" y="265"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nPU-8H-B6X">
@@ -622,11 +627,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Py-oO-9KP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2322" y="2170"/>
+            <point key="canvasLocation" x="2041" y="1898"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qM2-j4-Hmc"/>
+        <segue reference="DsO-ai-Vv9"/>
         <segue reference="Ik8-t8-J5K"/>
         <segue reference="ndC-vl-whv"/>
     </inferredMetricsTieBreakers>
