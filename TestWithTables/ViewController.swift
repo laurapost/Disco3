@@ -16,9 +16,28 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var pickerView: UIPickerView!
     var discussion: Discussion?
-    var periods: [Class] = classes.classes
+    var periods: [Class] = []
     var students: [Student] = []
     var selectedPeriod: Class!
+    
+    //MARK: Actions
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        classes.restore(fileName: "SavedName")
+        periods = classes.classes
+        
+        //Handle the text field's user input
+        nameTextField.delegate = self
+        
+        //Enable the Save button only if the text field has a valid discussion name
+        updateSaveButtonState()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     
     //MARK: Pickerview functions
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -83,21 +102,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
          discussion = Discussion(name: nameTextField.text!, className: selectedPeriod.name, students: students)
     }
     
-    //MARK: Actions
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        //Handle the text field's user input
-        nameTextField.delegate = self
-       
-        //Enable the Save button only if the text field has a valid discussion name
-        updateSaveButtonState()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     //MARK: Private Methods
     private func updateSaveButtonState() {
