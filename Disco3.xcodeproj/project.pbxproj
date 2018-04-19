@@ -337,6 +337,7 @@
 				TargetAttributes = {
 					CD66FB3B1FE46DD40090D6A3 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 96L2Y94678;
 						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
@@ -611,6 +612,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 96L2Y94678;
 				INFOPLIST_FILE = TestWithTables/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = laurabelle.Disco3;
@@ -624,6 +626,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 96L2Y94678;
 				INFOPLIST_FILE = TestWithTables/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = laurabelle.Disco3;
