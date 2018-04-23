@@ -10,6 +10,6 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var studentLabel: UILabel!
-    
+    @IBOutlet weak var totalPoints: UILabel!
     
 }

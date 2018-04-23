@@ -18,13 +18,13 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        self.collectionView.reloadData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -38,6 +38,7 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as? CollectionViewCell
         let student = students[indexPath.item]
         cell?.studentLabel.text = student.studentName
+        cell?.totalPoints.text = String(student.points) + " points"
         return cell!
     }
     
