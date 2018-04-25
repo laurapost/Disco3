@@ -193,16 +193,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBC-3d-zJj">
-                                                    <rect key="frame" x="0.0" y="0.0" width="176" height="131"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBC-3d-zJj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
                                                     <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCZ-ZH-bhN">
-                                                    <rect key="frame" x="0.0" y="126" width="175" height="49"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCZ-ZH-bhN">
+                                                    <rect key="frame" x="0.0" y="131" width="175" height="44"/>
                                                     <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -210,6 +208,16 @@
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="BBC-3d-zJj" secondAttribute="trailing" id="5NR-xY-Huu"/>
+                                            <constraint firstAttribute="bottom" secondItem="mCZ-ZH-bhN" secondAttribute="bottom" id="5jQ-vt-HQj"/>
+                                            <constraint firstItem="BBC-3d-zJj" firstAttribute="top" secondItem="KHq-DC-4EQ" secondAttribute="top" id="8bU-O2-SzJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="BBC-3d-zJj" secondAttribute="bottom" id="Ih7-Ik-ABc"/>
+                                            <constraint firstItem="mCZ-ZH-bhN" firstAttribute="top" secondItem="KHq-DC-4EQ" secondAttribute="top" constant="131" id="NkN-L0-ICC"/>
+                                            <constraint firstItem="mCZ-ZH-bhN" firstAttribute="leading" secondItem="KHq-DC-4EQ" secondAttribute="leading" id="ZFM-NI-fuh"/>
+                                            <constraint firstItem="BBC-3d-zJj" firstAttribute="leading" secondItem="KHq-DC-4EQ" secondAttribute="leading" id="irc-5F-ODP"/>
+                                            <constraint firstAttribute="trailing" secondItem="mCZ-ZH-bhN" secondAttribute="trailing" id="nYh-IG-SE6"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="studentLabel" destination="BBC-3d-zJj" id="ifh-QX-oEB"/>
                                             <outlet property="totalPoints" destination="mCZ-ZH-bhN" id="GLq-QN-3fT"/>
@@ -473,7 +481,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJl-1K-f9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2041" y="1098"/>
+            <point key="canvasLocation" x="1974" y="1098"/>
         </scene>
         <!--New Class-->
         <scene sceneID="izN-We-Cfd">
@@ -604,6 +612,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addStudentButton" destination="Kil-Uj-LVw" id="ych-IN-d0h"/>
                         <outlet property="addStudentTextField" destination="FjO-7F-VeG" id="GyV-dq-fhf"/>
                         <outlet property="rosterNameTextField" destination="ZaU-Bn-QTC" id="yDQ-2D-XCI"/>
                         <outlet property="saveButton" destination="f58-uC-62O" id="YfD-XX-68N"/>
@@ -657,7 +666,7 @@
         <image name="1024.png" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DsO-ai-Vv9"/>
+        <segue reference="qM2-j4-Hmc"/>
         <segue reference="5XD-uG-QTk"/>
         <segue reference="ndC-vl-whv"/>
     </inferredMetricsTieBreakers>

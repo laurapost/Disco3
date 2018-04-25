@@ -25,6 +25,9 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var studentsCountLabel: UILabel!
     
+    @IBOutlet weak var addStudentButton: UIButton!
+    
+    
 
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         // Depending on style of presentation (modal or push presentation), this view controller needs to be dismissed in two different ways.
@@ -41,13 +44,13 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         addStudentTextField.delegate = self
         rosterNameTextField.delegate = self
         tableView.tableFooterView = UIView(frame: CGRect.zero)
         updateSaveButtonState()
+        updateAddButtonState()
         
         //Set up views if editing
         if let roster = roster {
@@ -75,6 +78,7 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
         addStudentTextField.text = ""
         view.endEditing(true)
         updateSaveButtonState()
+        updateAddButtonState()
     }
     
     //MARK: UITextFieldDelegate
@@ -84,6 +88,7 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         updateSaveButtonState()
+        updateAddButtonState()
     }
     
     //MARK: Private methods
@@ -91,6 +96,11 @@ class CreateClassViewController: UIViewController, UITextFieldDelegate {
         //Disable the save button if the text field is empty
         let text = rosterNameTextField.text ?? ""
         saveButton.isEnabled = !text.isEmpty
+    }
+    
+    func updateAddButtonState() {
+        let text = addStudentTextField.text ?? ""
+        addStudentButton.isEnabled = !text.isEmpty
     }
     
     //MARK: Navigation
